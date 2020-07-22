@@ -1,0 +1,4 @@
+name: Custom Rest API
+type: module
+description: Custom RESTful API module with GET
+core: 8.x
