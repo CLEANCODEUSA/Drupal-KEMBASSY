@@ -7,10 +7,6 @@
 
   'use strict';
 
-  Drupal.webform = Drupal.webform || {};
-  Drupal.webform.cards = Drupal.webform.cards || {};
-  Drupal.webform.cards.autoForwardDelay = Drupal.webform.cards.autoForwardDelay || 250; // 1/4 second delay.
-
   /**
    * Initialize webform cards.
    *
@@ -564,7 +560,7 @@
          *   The event triggered.
          */
         function nextButtonClickEventHandler(event) {
-          var validator = $form.validate(drupalSettings.cvJqueryValidateOptions);
+          var validator = $form.validate();
           if (!$form.valid()) {
             // Focus first invalid input.
             validator.focusInvalid();
@@ -635,7 +631,7 @@
             return value;
           });
           if (inputHasValue) {
-            setTimeout(function () {$nextButton.click();}, Drupal.webform.cards.autoForwardDelay);
+            $nextButton.click();
           }
         }
       });

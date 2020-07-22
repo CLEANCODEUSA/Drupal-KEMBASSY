@@ -356,7 +356,7 @@ class WebformSubmissionForm extends ContentEntityForm {
     if ($source_entity === $entity) {
       $source_entity = $this->requestHandler->getCurrentSourceEntity(['webform', 'webform_submission']);
     }
-    // Handle paragraph source entity.
+    // Handle paragraph sourc entity.
     if ($source_entity && $source_entity->getEntityTypeId() === 'paragraph') {
       // Disable :clear suffix to prevent webform tokens from being removed.
       $data = $this->tokenManager->replace($data, $source_entity, [], ['suffixes' => ['clear' => FALSE]]);
@@ -780,8 +780,7 @@ class WebformSubmissionForm extends ContentEntityForm {
 
     // Append elements to the webform.
     $form['elements'] = [
-      '#type' => 'html_tag',
-      '#tag' => 'div',
+      '#type' => 'container',
       '#attributes' => ['class' => ['webform-elements']],
     ] + $elements;
 
@@ -2229,7 +2228,7 @@ class WebformSubmissionForm extends ContentEntityForm {
           $page_element =& $form['elements'][$page_key];
           $page_element_plugin = $this->elementManager->getElementInstance($page_element);
           if ($page_element_plugin instanceof WebformElementWizardPageInterface) {
-            if ($page_key != $current_page) {
+            if ($page_key !== $current_page) {
               $page_element_plugin->hidePage($page_element);
             }
             else {

@@ -13,7 +13,7 @@
   Drupal.webform.dialog.options = Drupal.webform.dialog.options || {};
 
   /**
-   * Programmatically open a webform (or page) in a dialog.
+   * Programatically open a webform (or page) in a dialog.
    *
    * @param {string} url
    *   Webform URL.

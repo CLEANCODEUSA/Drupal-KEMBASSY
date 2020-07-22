@@ -343,11 +343,12 @@ class WebformOptionsCustom extends FormElement implements WebformOptionsCustomIn
     // DOM element which contain any of the attributes.
     $css_attributes = array_map(
       function ($value) {
-        return 'descendant-or-self::*[@' . $value . ']';
+        return '[' . $value . ']';
       },
       $custom_attributes
     );
-    $xpath_expression = implode(' | ', $css_attributes);
+    $css_selector_converter = new CssSelectorConverter();
+    $xpath_expression = $css_selector_converter->toXPath(implode(',', $css_attributes));
 
     // Remove XML tag from SVG file.
     $xml_tag = NULL;

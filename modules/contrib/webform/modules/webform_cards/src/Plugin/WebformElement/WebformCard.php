@@ -136,11 +136,6 @@ class WebformCard extends ContainerBase {
       $this->t('Defaults to: %value', ['%value' => $webform->getSetting('wizard_next_button_label', TRUE)]),
     ];
 
-    $form['form']['display_container']['title_display']['#options'] = [
-      'none' => $this->t('None'),
-      'invisible' => $this->t('Invisible'),
-    ];
-
     return $form;
   }
 

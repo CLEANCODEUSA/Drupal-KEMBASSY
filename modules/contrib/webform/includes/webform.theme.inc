@@ -515,9 +515,6 @@ function webform_preprocess_form_element(&$variables) {
 
     // Add system .description class.
     if (isset($variables['description'])) {
-      if (empty($variables['description']['attributes'])) {
-        $variables['description']['attributes'] = new Attribute();
-      }
       $variables['description']['attributes']->addClass('description');
     }
   }
