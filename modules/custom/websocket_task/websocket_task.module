@@ -28,7 +28,13 @@ function websocket_task_help($route_name, RouteMatchInterface $route_match) {
  */
 function websocket_task_theme() {
   return [
-    'chat_block' => [
+    'chat_block1' => [
+      'variables' => [
+        'form' => '',
+      ],
+      'template' => 'block--chat-block',
+    ],
+    'chat_block2' => [
       'variables' => [
         'form' => '',
       ],

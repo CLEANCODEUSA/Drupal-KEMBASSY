@@ -13,21 +13,25 @@ use Ratchet\websocket_task\WsServer;
  */
 class SocketServer {
 
-  /**
-   * Starts websocket_task server.
-   */
-  public static function run() {
-    $server = IoServer::factory(
-      new HttpServer(
-        new WsServer(
-          new Chat()
-        )
-      ),
-      3000
-    );
+    /**
+     * Starts websocket_task server.
+     */
+    public static function run() {
+         $server = IoServer::factory(
+           new HttpServer(
+             new WsServer(
+               new Chat()
+             )
+           ),
+           3000
+         );
+         $server->run();
+        /*$server = IoServer::factory(
+                        new Chat(),
+                        8081
+        );*/
 
-    $server->run();
-
-  }
+        $server->run();
+    }
 
 }

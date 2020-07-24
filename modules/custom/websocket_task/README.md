@@ -1,20 +1,8 @@
-Real time Drupal powered by Ratchet.
+This is an Example Websockets module. It is in development
 
-INSTALLATION
+The module currently provides the following functionality:
 
-Preferred way to download a module with composer.
-Please run 'composer require drupal/websocket'
-from the webroot directory (neither inside the core directory nor
-inside websocket module directory).
+1. Enable / Disable should work without errors
 
-USAGE
-
-Module adds drush command 'start-websocket-server' to start websocket
-server powered by Ratchet library. This should work on local machine.
-More information about Ratchet:
-http://socketo.me/
-
-Module adds 'Chat' custom block. Place block to some region
-to enable websocket chat integration.
- 
-For production deployment please refer to http://socketo.me/docs/deploy.
+2. Module provides two Chat Blocks: After enabling the module as a site administrator, go to following path: '/admin/structure/block',
+   click the 'Place block' button to place each of the available 2 Chat Blocks on different web pages across the site.  After placing the chat blocks in a region/page, open two separate browser tabs for each web page containing a Chat block. Enter a message into the text_area provided and click send. You should see the Chat message appear in Chat Block 2 and vice versa. This simulates Chat functionality using Websockets in Drupal.

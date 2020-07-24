@@ -10,13 +10,13 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * @package Drupal\websocket_task\Form
  */
-class ChatForm extends FormBase {
+class ChatForm1 extends FormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'chat_form';
+    return 'chat_form1';
   }
 
   /**
