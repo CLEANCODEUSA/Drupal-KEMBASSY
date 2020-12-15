@@ -45,50 +45,7 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
-
-    <header role="banner">
-        {{ page.header }}
-    </header>
-
-{#    {{ page.primary_menu }}#}
-{#    {{ page.secondary_menu }}#}
-
-{#    {{ page.breadcrumb }}#}
-
-    {{ page.highlighted }}
-
-    {{ page.help }}
-
-    <main role="main">
-        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-        <div class="layout-content">
-            {{ page.content }}
-        </div>{# /.layout-content #}
-
-        {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
-                {{ page.sidebar_first }}
-            </aside>
-        {% endif %}
-
-        {% if page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
-                {{ page.sidebar_second }}
-            </aside>
-        {% endif %}
-
-    </main>
-
-    {% if page.footer %}
-        <footer role="contentinfo">
-            {{ page.footer }}
-        </footer>
-    {% endif %}
-
-</div>{# /.layout-container #}
-
+{{ page.header }}
 <div class="row">
     <div class="col">
         <nav class="navbar navbar-light navbar-expand-lg d-xl-flex align-items-xl-center">
@@ -100,13 +57,18 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                <div
-                    class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
-                    <ul class="nav navbar-nav justify-content-end">
-                        <li class="nav-item" id="li-why-php-rhinos-3"><a class="nav-link" href="heir.html">HEiR<br></a></li>
-                        <li class="nav-item" id="li-why-php-rhinos-2"><a class="nav-link" href="membership.html">Membership<br></a></li>
-                        <li class="nav-item" id="li-why-php-rhinos-1"><a class="nav-link" href="coaching.html">Coaching<br></a></li>
-                    </ul>
+                <div class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
+                    {# Get menu items #}
+                    {% set items = simplify_menu('main') %}
+
+                    {# Iterate menu tree #}
+                    <nav>
+                      <ul class="nav navbar-nav justify-content-end">
+                        {% for menu_item in items.menu_tree %}
+                          <li class="nav-item"><a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </nav>
                 </div>
             </div>
         </nav>
