@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d4c47d58d652e3070937512e0f94b72",
+    "content-hash": "6fce159057c993d1885655a1b23b5cf7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -124,7 +124,7 @@
         },
         {
             "name": "cboden/ratchet",
-            "version": "dev-master",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ratchetphp/Ratchet.git",
@@ -3419,6 +3419,71 @@
             }
         },
         {
+            "name": "drupal/entityreference",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entityreference.git",
+                "reference": "f7eb8573759933abc9b819b00139dbb5a5f261da"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1350521385",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Damien Tournoud",
+                    "homepage": "https://www.drupal.org/user/22211"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/user/290182"
+                },
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "minorOffense",
+                    "homepage": "https://www.drupal.org/user/129088"
+                },
+                {
+                    "name": "spotzero",
+                    "homepage": "https://www.drupal.org/user/657848"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/entityreference",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entityreference"
+            },
+            "time": "2012-10-21T19:30:59+00:00"
+        },
+        {
             "name": "drupal/feeds",
             "version": "3.0.0-alpha9",
             "source": {
@@ -6123,56 +6188,6 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
-            }
-        },
-        {
-            "name": "drupal/websocket",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/websocket.git",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/websocket-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "a4111f54af7841909dbaffcac389b028d94cabe2"
-            },
-            "require": {
-                "cboden/ratchet": "dev-master",
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1530434324",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Oleg Elizarov",
-                    "homepage": "https://www.drupal.org/user/2227126",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "olegel",
-                    "homepage": "https://www.drupal.org/user/1828678"
-                }
-            ],
-            "description": "Real time Drupal",
-            "homepage": "https://drupal.org/project/websocket",
-            "support": {
-                "source": "https://git.drupalcode.org/project/websocket"
             }
         },
         {
@@ -10717,6 +10732,7 @@
         "drupal/better_exposed_filters": 10,
         "drupal/conditional_fields": 15,
         "drupal/ember": 20,
+        "drupal/entityreference": 20,
         "drupal/feeds": 15,
         "drupal/feeds_tamper": 10,
         "drupal/filefield_sources": 15,
@@ -10728,8 +10744,7 @@
         "drupal/multiple_fields_remove_button": 15,
         "drupal/node_type_class": 10,
         "drupal/rules": 15,
-        "drupal/viewfield": 10,
-        "drupal/websocket": 10
+        "drupal/viewfield": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
