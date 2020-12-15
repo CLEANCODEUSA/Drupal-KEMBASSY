@@ -121,8 +121,8 @@
     },
     {
         "name": "cboden/ratchet",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v0.4.3",
+        "version_normalized": "0.4.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ratchetphp/Ratchet.git",
@@ -147,7 +147,7 @@
         },
         "time": "2020-07-07T15:50:14+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Ratchet\\": "src/Ratchet"
@@ -3506,6 +3506,72 @@
         }
     },
     {
+        "name": "drupal/entityreference",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/entityreference.git",
+            "reference": "f7eb8573759933abc9b819b00139dbb5a5f261da"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x-dev",
+                "datestamp": "1350521385",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Damien Tournoud",
+                "homepage": "https://www.drupal.org/user/22211"
+            },
+            {
+                "name": "Devin Carlson",
+                "homepage": "https://www.drupal.org/user/290182"
+            },
+            {
+                "name": "amateescu",
+                "homepage": "https://www.drupal.org/user/729614"
+            },
+            {
+                "name": "amitaibu",
+                "homepage": "https://www.drupal.org/user/57511"
+            },
+            {
+                "name": "bojanz",
+                "homepage": "https://www.drupal.org/user/86106"
+            },
+            {
+                "name": "minorOffense",
+                "homepage": "https://www.drupal.org/user/129088"
+            },
+            {
+                "name": "spotzero",
+                "homepage": "https://www.drupal.org/user/657848"
+            }
+        ],
+        "homepage": "https://www.drupal.org/project/entityreference",
+        "support": {
+            "source": "https://git.drupalcode.org/project/entityreference"
+        }
+    },
+    {
         "name": "drupal/feeds",
         "version": "3.0.0-alpha9",
         "version_normalized": "3.0.0.0-alpha9",
@@ -6295,58 +6361,6 @@
             "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
             "docs": "https://www.drupal.org/docs/8/modules/webform",
             "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
-        }
-    },
-    {
-        "name": "drupal/websocket",
-        "version": "1.0.0-beta1",
-        "version_normalized": "1.0.0.0-beta1",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupalcode.org/project/websocket.git",
-            "reference": "8.x-1.0-beta1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/websocket-8.x-1.0-beta1.zip",
-            "reference": "8.x-1.0-beta1",
-            "shasum": "a4111f54af7841909dbaffcac389b028d94cabe2"
-        },
-        "require": {
-            "cboden/ratchet": "dev-master",
-            "drupal/core": "~8.0"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "drupal": {
-                "version": "8.x-1.0-beta1",
-                "datestamp": "1530434324",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Project has not opted into security advisory coverage!"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Oleg Elizarov",
-                "homepage": "https://www.drupal.org/user/2227126",
-                "role": "Maintainer"
-            },
-            {
-                "name": "olegel",
-                "homepage": "https://www.drupal.org/user/1828678"
-            }
-        ],
-        "description": "Real time Drupal",
-        "homepage": "https://drupal.org/project/websocket",
-        "support": {
-            "source": "https://git.drupalcode.org/project/websocket"
         }
     },
     {

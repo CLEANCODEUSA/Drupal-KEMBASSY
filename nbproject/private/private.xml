@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/vanbeek/Sites/kembassy-d8.9.2/themes/contrib/kembassy/templates/system/html.html.twig</file>
+            <file>file:/Users/vanbeek/Sites/kembassy-d8.9.2/themes/contrib/kembassy/kembassy.libraries.yml</file>
+            <file>file:/Users/vanbeek/Sites/kembassy-d8.9.2/themes/contrib/kembassy/kembassy.info.yml</file>
+        </group>
     </open-files>
 </project-private>
