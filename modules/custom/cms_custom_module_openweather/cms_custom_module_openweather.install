@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the cms_custom_module_openweather module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function cms_custom_module_openweather_install() {
+  \Drupal::configFactory()->getEditable('cms_custom_module_openweather.settings')
+    ->set('appid', '7e933eb1e9a53d3d0aa14bba68adbf40')
+    ->set('input_value', '90005')
+    ->set('count', '36')
+    ->set('display_select', 'current_details')
+    ->save();
+}

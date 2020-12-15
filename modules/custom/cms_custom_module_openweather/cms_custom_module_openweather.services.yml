@@ -1,0 +1,4 @@
+services:
+  cms_custom_module_openweather.weather_service:
+    class: Drupal\cms_custom_module_openweather\WeatherService
+    arguments: ['@http_client']

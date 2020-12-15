@@ -29,9 +29,10 @@ class SocketServer {
         /*$server = IoServer::factory(
                         new Chat(),
                         8081
-        );*/
+        );
 
         $server->run();
+         */
     }
 
 }

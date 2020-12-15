@@ -1,0 +1,4 @@
+cms_custom_module_openweather:
+  version: 8.x
+  js:
+    js/cms_open.js: {}
