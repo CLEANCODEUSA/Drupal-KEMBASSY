@@ -6,5 +6,4 @@ ke-styles:
   css:
     theme:
       css/ke-styles/Footer-Clean.css: {}
-      css/ke-styles/PHPRHiNOS-Hero.css: {}
       css/ke-styles/styles.css: {}
