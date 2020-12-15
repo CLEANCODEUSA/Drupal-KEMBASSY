@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="245.13" height="9" viewBox="0 0 245.13 9">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4c46db"/>
+      <stop offset="0.735" stop-color="#605aeb"/>
+      <stop offset="1" stop-color="#605aeb"/>
+    </linearGradient>
+  </defs>
+  <g id="slider" transform="translate(-837.94 -5106.94)">
+    <rect id="Shape_4" data-name="Shape 4" width="245.13" height="1" transform="translate(837.94 5110.94)" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_770" data-name="Ellipse 770" cx="4.5" cy="4.5" r="4.5" transform="translate(956.06 5106.94)" fill="#54c5e8"/>
+    <g id="Ellipse_770_copy" data-name="Ellipse 770 copy" transform="translate(896.06 5106.94)" fill="#54c5e8" stroke="#fff" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_770_copy_4" data-name="Ellipse 770 copy 4" transform="translate(867.06 5106.94)" fill="#54c5e8" stroke="#fff" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_770_copy_2" data-name="Ellipse 770 copy 2" transform="translate(1017.06 5106.94)" fill="#54c5e8" stroke="#fff" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+    <g id="Ellipse_770_copy_3" data-name="Ellipse 770 copy 3" transform="translate(1046.06 5106.94)" fill="#54c5e8" stroke="#fff" stroke-width="1">
+      <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+      <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+    </g>
+  </g>
+</svg>

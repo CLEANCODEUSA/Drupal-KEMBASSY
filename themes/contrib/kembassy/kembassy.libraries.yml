@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+ke-styles:
+  css:
+    theme:
+      css/ke-styles/Open-Sans.css: {}
+      css/ke-styles/fontawesome-all.min.css: {}
+      css/ke-styles/AlexBrush-Regular.css: {}
+      css/ke-styles/Footer-Clean.css: {}
+      css/ke-styles/PHPRHiNOS-Hero.css: {}
+      css/ke-styles/Trajan-Bold.css: {}
+      css/ke-styles/TrajanPro-Bold.css: {}
+      css/ke-styles/TrajanPro-Regular.css: {}
+      css/ke-styles/styles.css: {}
