@@ -1,8 +1,12 @@
 @media (min-width: 992px) {
   .nav-item {
     color: black;
-    margin: 0 0% 0% 2%;
+    margin: 0 0% 0% 0%;
   }
+}
+
+.navbar-brand img {
+    height: unset;
 }
 
 .nav.navbar-nav.justify-content-end {
