@@ -47,27 +47,27 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+{#  <header role="banner">#}
+{#    {{ page.header }}#}
+{#  </header>#}
 
-  {{ page.primary_menu }}
+{#  {{ page.primary_menu }}#}
 {#  {{ page.secondary_menu }}#}
 
-  {{ page.breadcrumb }}
+{#  {{ page.breadcrumb }}#}
 
-  {{ page.highlighted }}
+{#  {{ page.highlighted }}#}
 
-  {{ page.help }}
+{#  {{ page.help }}#}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+{#  <main role="main">#}
+{#    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
 
-    {% if page.sidebar_first %}
+{#    {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">
         {{ page.sidebar_first }}
       </aside>
@@ -77,17 +77,17 @@
       <aside class="layout-sidebar-second" role="complementary">
         {{ page.sidebar_second }}
       </aside>
-    {% endif %}
+    {% endif %}#}
 
-  </main>
+{#  </main>#}
 
-  {% if page.footer %}
+{#  {% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}
     </footer>
-  {% endif %}
+  {% endif %}#}
 
-</div>{# /.layout-container #}
+</div>
 
 <div class="row">
     <div class="col">
