@@ -1,6 +1,0 @@
-custom_rest.get:
-  path: 'feeds/get.json'
-  defaults: { _controller: '\Drupal\custom_rest\Controller\TestAPIController::get_example' }
-  methods:  [GET]
-  requirements:
-    _access: 'TRUE'

@@ -1,5 +1,0 @@
-name: 'websocket_task'
-type: module
-description: 'This is a Development version of a websocket example'
-core: 8.x
-package: 'Custom'

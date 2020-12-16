@@ -1,6 +1,0 @@
-name: Custom Openweather
-description: A weather details.
-core: 8.x
-configure: cms_custom_module_openweather.settings
-package: Custom
-type: module

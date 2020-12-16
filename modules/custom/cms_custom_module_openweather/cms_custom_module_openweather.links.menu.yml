@@ -1,5 +1,0 @@
-cms_custom_module_openweather.settings:
-  title: Custom Openweather
-  description: 'Configure to add the appid value.'
-  route_name: cms_custom_module_openweather.settings
-  parent: system.admin_config_services
