@@ -72,29 +72,61 @@
  * @ingroup themeable
  */
 #}
-{#node--article.html.twig#}
-<article{{ attributes }}>
+{#<article{{ attributes }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {{ title_prefix }}
+    {% if label and not page %}
+        <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+    {% if display_submitted %}
+        <footer>
+            {{ author_picture }}
+            <div{{ author_attributes }}>
+                {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                {{ metadata }}
+            </div>
+        </footer>
+    {% endif %}
 
-  <div{{ content_attributes }}>
-    {{ content }}
-  </div>
+    <div{{ content_attributes }}>
+        {{ content }}
+    </div>
 
-</article>
+</article>#}
+{% if content.field_image|field_value %}
+<div id="section-2" class="container section-2" {{ attributes }}>
+  <div class="row">
+    <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
+{% endif %}
+
+{% if not content.field_image|field_value %}
+<div class="container d-xl-flex justify-content-xl-center about-gd" {{ attributes }}>
+  <div class="row d-xl-flex justify-content-xl-center section-2">
+    <div class="col about-kembassy">
+{% endif %}
+            {{ title_prefix }}
+            {% if label and not page %}
+              <h2{{ title_attributes }}>
+                <strong><a href="{{ url }}" rel="bookmark">{{ label }}</a></strong>
+              </h2>
+            {% endif %}
+            {{ title_suffix }}
+
+            {% if content.field_cta_description_text|field_value %}
+              <p class="">{{ content.field_cta_description_text|field_value }}</p>
+            {% endif %}
+            <a href="{{ url }}" class="btn btn-link download-free-ebook-btn" role="button">
+                {{ content.field_cta_link_text|field_value }}
+            </a>
+        </div>
+        <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center">
+          {% if content.field_image|field_value %}
+            {{ content.field_image|field_value }}
+          {% endif %}
+        </div>
+    </div>
+</div>
