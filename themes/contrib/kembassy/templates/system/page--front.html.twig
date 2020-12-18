@@ -45,7 +45,8 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
+
+{#<div class="layout-container">#}
 
 {#  <header role="banner">#}
 {#    {{ page.header }}#}
@@ -63,9 +64,9 @@
 {#  <main role="main">#}
 {#    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>
+{#    <div class="layout-content">#}
+      {#{{ page.content }}#}
+{#    </div>#}
 
 {#    {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">
@@ -87,7 +88,7 @@
     </footer>
   {% endif %}#}
 
-</div>
+{#</div>#}
 
 <div class="row">
     <div class="col">
@@ -118,11 +119,11 @@
     </div>
 </div>
 
+{{ page.content }}
 
 
-
-<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center hero-bg"></div>
-<div class="container section-2" id="section-2">
+{#<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center hero-bg"></div>#}
+{#<div class="container section-2" id="section-2">
     <div class="row">
         <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
             <h2><strong>About Kingdom Embassy</strong><br></h2>
@@ -130,8 +131,8 @@
                 develop into better relationships at home, in the community, in business, and with society.<br></p><a href="heir.html" class="btn btn-link download-free-ebook-btn" role="button">More About Kingdom Embassy</a></div>
         <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center"><img class="portrait-1" src="{{ base_path }}/themes/contrib/kembassy/assets/img/portrait.svg"></div>
     </div>
-</div>
-<div class="container d-xl-flex justify-content-xl-center about-gd">
+</div>#}
+{#<div class="container d-xl-flex justify-content-xl-center about-gd">
     <div class="row d-xl-flex justify-content-xl-center section-2">
         <div class="col about-kembassy">
             <h2><strong>About Glenisaah Deborah</strong><br></h2>
@@ -140,8 +141,9 @@
                 These principles will help you to survive, to outlast, what in the past have devastated others, so that you could eventually thrive.<br></p><!--<a href="tel:518-512-9261" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a>-->
             <a href="contact.html" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a></div>
     </div>
-</div>
-<div class="container prayer-section" id="section-4">
+</div>#}
+
+{#<div class="container prayer-section" id="section-4">
     <div class="row no-gutters d-xl-flex justify-content-xl-center align-items-xl-center section-4">
         <div class="col-12">
             <h2><strong>My Prayer for your</strong><br></h2>
@@ -162,8 +164,9 @@
             <p class="created-date">2020<br></p>
             <p class="blog-post-desc">The Power and Blessings of the Cross of Jesus Christ<br></p><a class="read-more" href="#">Read More</a></div>
     </div>
-</div>
-<div class="container d-xl-flex justify-content-xl-center about-gd">
+</div>#}
+
+{#<div class="container d-xl-flex justify-content-xl-center about-gd">
     <div class="row d-xl-flex section-2">
         <div class="col about-kembassy">
             <h2><strong>What People Are Saying</strong><br></h2>
@@ -171,7 +174,8 @@
             <div class="comment-image"><img src="themes/contrib/kembassy/assets/img/Clip.svg"></div>
         </div>
     </div>
-</div>
+</div>#}
+
 <div class="footer-clean">
     <footer>
         <div class="container">
