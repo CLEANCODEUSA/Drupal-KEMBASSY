@@ -6,4 +6,5 @@ ke-styles:
   css:
     theme:
       css/ke-styles/Footer-Clean.css: {}
+      css/ke-styles/custom.css: {}
       css/ke-styles/styles.css: {}
