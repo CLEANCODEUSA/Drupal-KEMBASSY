@@ -72,30 +72,28 @@
  * @ingroup themeable
  */
 #}
-{#node.html.twig#}
-<article{{ attributes }}>
 
-{#  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+{#loading node--hero.html.twig#}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}#}
-
-
-<div{{ content_attributes }}>
-    {{ content }}
+<div class="container d-xl-flex justify-content-xl-center align-items-xl-center hero-section"
+     {% if content.field_hero_image|field_value %}
+        style="background-image: url('{{ file_url(node.field_hero_image.entity.fileuri) }}')"
+{#        <img src="{{ file_url(node.field_image.entity.fileuri) }}" />#}
+     {% endif %}>
+    
+    <div class="row">
+        
+        {% if content.field_hero_headline|field_value %}
+        <div class="col-12 d-xl-flex justify-content-xl-center">
+            <h1 class="hero-headline">{{ content.field_hero_headline|field_value }}</h1>
+        </div>
+        {% endif %}
+        
+        {% if content.field_hero_sub_headline|field_value %}
+        <div class="col-12 d-xl-flex justify-content-xl-center">
+            <h1 class="hero-sub-headline">{{ content.field_hero_sub_headline|field_value }}</h1>
+        </div>
+        {% endif %}
+        
+    </div>
 </div>
-
-</article>
