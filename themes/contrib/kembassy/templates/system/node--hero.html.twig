@@ -73,27 +73,24 @@
  */
 #}
 
-{#loading node--hero.html.twig#}
-
 <div class="container d-xl-flex justify-content-xl-center align-items-xl-center hero-section"
      {% if content.field_hero_image|field_value %}
-        style="background-image: url('{{ file_url(node.field_hero_image.entity.fileuri) }}')"
-{#        <img src="{{ file_url(node.field_image.entity.fileuri) }}" />#}
+         style="background-image: url('{{ file_url(node.field_hero_image.entity.fileuri) }}')"
      {% endif %}>
-    
+
     <div class="row">
-        
+
         {% if content.field_hero_headline|field_value %}
-        <div class="col-12 d-xl-flex justify-content-xl-center">
-            <h1 class="hero-headline">{{ content.field_hero_headline|field_value }}</h1>
-        </div>
+            <div class="col-12 d-xl-flex justify-content-xl-center">
+                <h1 class="hero-headline">{{ content.field_hero_headline|field_value }}</h1>
+            </div>
         {% endif %}
-        
+
         {% if content.field_hero_sub_headline|field_value %}
-        <div class="col-12 d-xl-flex justify-content-xl-center">
-            <h1 class="hero-sub-headline">{{ content.field_hero_sub_headline|field_value }}</h1>
-        </div>
+            <div class="col-12 d-xl-flex justify-content-xl-center">
+                <h1 class="hero-sub-headline">{{ content.field_hero_sub_headline|field_value }}</h1>
+            </div>
         {% endif %}
-        
+
     </div>
 </div>
