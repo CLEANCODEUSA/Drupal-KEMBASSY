@@ -1161,3 +1161,15 @@ ser {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.container.hero-section {
+  max-width: 100% !important;
+  min-height: 712px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.hero-section .hero-headline {
+  font-size: 72px;
+}
