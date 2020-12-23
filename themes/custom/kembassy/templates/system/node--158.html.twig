@@ -1,4 +1,4 @@
-loding node--158.html.twig for about page
+{#loding node--158.html.twig for about page#}
 {#
 /**
  * @file
@@ -76,27 +76,37 @@ loding node--158.html.twig for about page
 {#node.html.twig#}
 <article{{ attributes }}>
 
-{#  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {#  {{ title_prefix }}
+      {% if label and not page %}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+    
+      {% if display_submitted %}
+        <footer>
+          {{ author_picture }}
+          <div{{ author_attributes }}>
+            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+            {{ metadata }}
+          </div>
+        </footer>
+      {% endif %}#}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}#}
 
+    <div{{ content_attributes }}>
+        {#    {{ content }}#}
 
-<div{{ content_attributes }}>
-    {{ content }}
-</div>
+        <div class="container section-2">
+            <div class="row">
+                <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy"><p>We all have a Voice and a story to tell the world that can influence real transformation, create redemptive impact, restore hope, encourage and empower others, communities, and nations.<br /><br />You can’t be in multiple places at once, but your story
+                        - your voice can be heard, around the world, and that is why this special interview is designed to help you share your story – your Transformation Voice with many around the world.<br /><br /><span class="pink">Glenisaah Deborah</span> <span class="blue">TV</span> Empowering her to leadhership with
+                        boldness and confidence for success in her life, at home, business / ministry<br /></p></div>
+                <div class="col d-lg-flex justify-content-lg-center"><img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/heir-group.png"></div>
+            </div>
+        </div>
+
+    </div>
 
 </article>
