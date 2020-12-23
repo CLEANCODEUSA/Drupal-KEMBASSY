@@ -110,12 +110,10 @@ field_event_external_url
 field_internal_content
 field_pdf
 #}
-{#{{ node.field_blog_date.value|date('n/j/Y') }}#}
-{#{{ node.field_blog_date.value|date('U')|format_date('short_mdyyyy') }}#}
 
 <div class="col-lg-4 col-xl-4 blog-post">
-    <p class="title">{{ content.field_event_date_and_time.value|date('d') }}</p>
-    <p class="created-date">{{ content.field_event_date_and_time.value|date('M') }}</p>
-    <p class="created-date">{{ content.field_event_date_and_time.value|date('Y') }}</p>
+    <p class="title">{{ event_day|field_value }}</p>
+    <p class="created-date">{{ event_month|field_value }}</p>
+    <p class="created-date">{{ event_year|field_value }}</p>
     <p class="blog-post-desc">{{ label }}</p><a class="read-more" href="{{ url }}">Read More</a>
 </div>
