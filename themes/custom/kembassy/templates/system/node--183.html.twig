@@ -1,0 +1,368 @@
+{#loading node--183.html.twig for coaching page#}
+{#
+/**
+ * @file
+ * Default theme implementation to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - node.getCreatedTime() will return the node creation timestamp.
+ *   - node.hasField('field_example') returns TRUE if the node bundle includes
+ *     field_example. (This does not indicate the presence of a value in this
+ *     field.)
+ *   - node.isPublished() will return whether the node is published or not.
+ *   Calling other methods, such as node.delete(), will result in an exception.
+ *   See \Drupal\node\Entity\Node for a full list of public properties and
+ *   methods for the node object.
+ * - label: (optional) The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: (optional) Themed creation date field.
+ * - author_name: (optional) Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ *
+ * @ingroup themeable
+ */
+#}
+{#node.html.twig#}
+<article{{ attributes }}>
+
+    {#  {{ title_prefix }}
+      {% if label and not page %}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+    
+      {% if display_submitted %}
+        <footer>
+          {{ author_picture }}
+          <div{{ author_attributes }}>
+            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+            {{ metadata }}
+          </div>
+        </footer>
+      {% endif %}#}
+
+
+    <div{{ content_attributes }}>
+        {#    {{ content }}#}
+
+        <idv class="coaching">
+            <div class="container section-1">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>It’s Okay to Be <span>Different</span></h2>
+                        <p>With Jacynth’s coaching you will get clarity and conviction in what matters for you.<br><br>You will get curious about the challenges you are facing and create new directions and beliefs in order to overcome these. We will work together
+                            and you will ultimately decide your own happiness</p>
+                        <h2>This Coaching is <span>for you.</span></h2>
+                        <ul class="text-left">
+                            <li> If you are ready to look for the answers, you’re ready for an insight into how life works.</li>
+                            <li>In spite of your success the fear of being different is preventing you from trying new things, meeting new people, missing potential <br>opportunities</li>
+                            <li>A sudden or unexpected change in your life has left you feeling shaken, a little unsure and questioning the essence of who you are</li>
+                            <li>If you are sick and tired of the challenging thoughts and emotions that are taking up space, and you just want life to be easier</li>
+                            <li>You are not looking for someone to fix you or do the work for you.</li>
+                            <li>You are ready to reignite your passion, fulfil your dreams and acknowledge your brilliance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <div class="container text-center d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <h3 class="d-xl-flex justify-content-xl-center">My Transformation&nbsp;Coaching Packages</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="container">
+                    <div class="row sapphire-heading">
+                        <div class="col">
+                            <div class="d-xl-flex"><img src="/kembassy-d/themes/custom/kembassy/assets/img/pstone.svg">
+                                <div>
+                                    <p class="stone">Sapphire 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <h4>Your package includes</h4>
+                            <div class="left-col">
+                                <ul>
+                                    <li>One to One Coaching</li>
+                                    <li>Eight Months</li>
+                                    <li>7 steps signature package</li>
+                                    <li>One 60 minute session every two weeks (total of 16 hours)</li>
+                                    <li>One hour bonus session (free)</li>
+                                    <li>Email support between scheduled sessions</li>
+                                    <li>Each session we co-create and agree actions for you</li>
+                                    <li>Weekly email check in support</li>
+                                    <li>Free accountability call 2 months after last session</li>
+                                    <li>POA</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center justify-content-xl-end align-items-xl-start"><img class="image" src="/kembassy-d/themes/custom/kembassy/assets/img/vw.svg"></div>
+                        <div class="col">
+                            <p>The Diamond package will provide you with support for eight months and will enable you to realise your truly authentic, confident and effective self, Acknowledging Your Brilliance.<br><br>Jacynth truly hears what is needed, her coaching
+                                offers a full transformation in thinking and actions towards your longer-term goals, it is for those seeking true authenticity and change in their life.<br><br>This is a comprehensive package to assist you with addressing current
+                                life matters as well as seeing your hopes and dreams unfold. This package will provide you with a sound platform for transforming, enriching and being in the present.<br><br>By the end of eight months you will notice a significant
+                                and profound effect from the changes that you have made and acknowledge “It’s okay to be different”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center section-4 divider-section">
+                <div class="container d-xl-flex justify-content-xl-center">
+                    <div class="row">
+                        <div class="col-12 d-xl-flex justify-content-xl-center">
+                            <p class="text-center">Are you ready to move to the next level? Jacynth is the transformational coach you need on your side. You can trust Jacynth to guide you toward the future you deserve. Take action TODAY!</p>
+                        </div>
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center"><button class="btn btn-primary" type="button">Click here to Schedule a 15 Minute Discovery Call</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-5">
+                <div class="container">
+                    <div class="row sapphire-heading">
+                        <div class="col-lg-6 col-xl-6"></div>
+                        <div class="col-lg-6 col-xl-6 d-xl-flex justify-content-xl-start sapphire-right">
+                            <div class="d-xl-flex justify-content-xl-end"><img src="/kembassy-d/themes/custom/kembassy/assets/img/sapphire-2.svg">
+                                <div class="d-xl-flex align-items-xl-center">
+                                    <p class="stone">Sapphire 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center align-items-xl-start"><img class="image" src="/kembassy-d/themes/custom/kembassy/assets/img/desk.svg"></div>
+                        <div class="col-lg-6 col-xl-6">
+                            <h4>Your package includes</h4>
+                            <div class="left-col">
+                                <ul>
+                                    <li>One to One Coaching</li>
+                                    <li>Eight Months</li>
+                                    <li>7 steps signature package</li>
+                                    <li>One 60 minute session every two weeks (total of 16 hours)</li>
+                                    <li>One hour bonus session (free)</li>
+                                    <li>Email support between scheduled sessions</li>
+                                    <li>Each session we co-create and agree actions for you</li>
+                                    <li>Weekly email check in support</li>
+                                    <li>Free accountability call 2 months after last session</li>
+                                    <li>POA</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>The Diamond package will provide you with support for eight months and will enable you to realise your truly authentic, confident and effective self, Acknowledging Your Brilliance.<br><br>Jacynth truly hears what is needed, her coaching
+                                offers a full transformation in thinking and actions towards your longer-term goals, it is for those seeking true authenticity and change in their life.<br><br>This is a comprehensive package to assist you with addressing current
+                                life matters as well as seeing your hopes and dreams unfold. This package will provide you with a sound platform for transforming, enriching and being in the present.<br><br>By the end of eight months you will notice a significant
+                                and profound effect from the changes that you have made and acknowledge “It’s okay to be different”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center section-6 divider-section">
+                <div class="container d-xl-flex justify-content-xl-center">
+                    <div class="row">
+                        <div class="col-12 d-xl-flex justify-content-xl-center">
+                            <p class="text-center">Are you ready to move to the next level? Jacynth is the transformational coach you need on your side. You can trust Jacynth to guide you toward the future you deserve. Take action TODAY!</p>
+                        </div>
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center"><button class="btn btn-primary" type="button">Click here to Schedule a 15 Minute Discovery Call</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="container">
+                    <div class="row sapphire-heading">
+                        <div class="col">
+                            <div class="d-xl-flex"><img src="/kembassy-d/themes/custom/kembassy/assets/img/emerald.svg">
+                                <div>
+                                    <p class="stone">Emerald</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <h4>Your package includes</h4>
+                            <div class="left-col">
+                                <ul>
+                                    <li>One to One Coaching</li>
+                                    <li>Eight Months</li>
+                                    <li>7 steps signature package</li>
+                                    <li>One 60 minute session every two weeks (total of 16 hours)</li>
+                                    <li>One hour bonus session (free)</li>
+                                    <li>Email support between scheduled sessions</li>
+                                    <li>Each session we co-create and agree actions for you</li>
+                                    <li>Weekly email check in support</li>
+                                    <li>Free accountability call 2 months after last session</li>
+                                    <li>POA</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center justify-content-xl-end align-items-xl-start"><img class="image" src="/kembassy-d/themes/custom/kembassy/assets/img/palm.svg"></div>
+                        <div class="col">
+                            <p>The Diamond package will provide you with support for eight months and will enable you to realise your truly authentic, confident and effective self, Acknowledging Your Brilliance.<br><br>Jacynth truly hears what is needed, her coaching
+                                offers a full transformation in thinking and actions towards your longer-term goals, it is for those seeking true authenticity and change in their life.<br><br>This is a comprehensive package to assist you with addressing current
+                                life matters as well as seeing your hopes and dreams unfold. This package will provide you with a sound platform for transforming, enriching and being in the present.<br><br>By the end of eight months you will notice a significant
+                                and profound effect from the changes that you have made and acknowledge “It’s okay to be different”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center section-4 divider-section">
+                <div class="container d-xl-flex justify-content-xl-center">
+                    <div class="row">
+                        <div class="col-12 d-xl-flex justify-content-xl-center">
+                            <p class="text-center">Are you ready to move to the next level? Jacynth is the transformational coach you need on your side. You can trust Jacynth to guide you toward the future you deserve. Take action TODAY!</p>
+                        </div>
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center"><button class="btn btn-primary" type="button">Click here to Schedule a 15 Minute Discovery Call</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-5">
+                <div class="container">
+                    <div class="row sapphire-heading">
+                        <div class="col-lg-6 col-xl-6"></div>
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center justify-content-xl-start sapphire-right">
+                            <div class="d-xl-flex justify-content-xl-end"><img src="/kembassy-d/themes/custom/kembassy/assets/img/sapphire-4.svg">
+                                <div class="d-xl-flex align-items-xl-center">
+                                    <p class="stone">Sapphire 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center align-items-xl-start"><img class="image" src="/kembassy-d/themes/custom/kembassy/assets/img/group-2.svg"></div>
+                        <div class="col-lg-6 col-xl-6">
+                            <h4>Your package includes</h4>
+                            <div class="left-col">
+                                <ul>
+                                    <li>One to One Coaching</li>
+                                    <li>Eight Months</li>
+                                    <li>7 steps signature package</li>
+                                    <li>One 60 minute session every two weeks (total of 16 hours)</li>
+                                    <li>One hour bonus session (free)</li>
+                                    <li>Email support between scheduled sessions</li>
+                                    <li>Each session we co-create and agree actions for you</li>
+                                    <li>Weekly email check in support</li>
+                                    <li>Free accountability call 2 months after last session</li>
+                                    <li>POA</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p>The Diamond package will provide you with support for eight months and will enable you to realise your truly authentic, confident and effective self, Acknowledging Your Brilliance.<br><br>Jacynth truly hears what is needed, her coaching
+                                offers a full transformation in thinking and actions towards your longer-term goals, it is for those seeking true authenticity and change in their life.<br><br>This is a comprehensive package to assist you with addressing current
+                                life matters as well as seeing your hopes and dreams unfold. This package will provide you with a sound platform for transforming, enriching and being in the present.<br><br>By the end of eight months you will notice a significant
+                                and profound effect from the changes that you have made and acknowledge “It’s okay to be different”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center section-6 divider-section">
+                <div class="container d-xl-flex justify-content-xl-center">
+                    <div class="row">
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center">
+                            <p class="text-center">Are you ready to move to the next level? Jacynth is the transformational coach you need on your side. You can trust Jacynth to guide you toward the future you deserve. Take action TODAY!</p>
+                        </div>
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center"><button class="btn btn-primary" type="button">Click here to Schedule a 15 Minute Discovery Call</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="container">
+                    <div class="row sapphire-heading">
+                        <div class="col d-flex justify-content-center">
+                            <div class="d-xl-flex"><img src="/kembassy-d/themes/custom/kembassy/assets/img/sapphire-5.svg">
+                                <div>
+                                    <p class="stone">Sapphire 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <h4>Your package includes</h4>
+                            <div class="left-col">
+                                <ul>
+                                    <li>One to One Coaching</li>
+                                    <li>Eight Months</li>
+                                    <li>7 steps signature package</li>
+                                    <li>One 60 minute session every two weeks (total of 16 hours)</li>
+                                    <li>One hour bonus session (free)</li>
+                                    <li>Email support between scheduled sessions</li>
+                                    <li>Each session we co-create and agree actions for you</li>
+                                    <li>Weekly email check in support</li>
+                                    <li>Free accountability call 2 months after last session</li>
+                                    <li>POA</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 d-flex d-xl-flex justify-content-center justify-content-xl-end align-items-xl-start"><img class="image" src="/kembassy-d/themes/custom/kembassy/assets/img/glenisaah-6.png"></div>
+                        <div class="col">
+                            <p>The Diamond package will provide you with support for eight months and will enable you to realise your truly authentic, confident and effective self, Acknowledging Your Brilliance.<br><br>Jacynth truly hears what is needed, her coaching
+                                offers a full transformation in thinking and actions towards your longer-term goals, it is for those seeking true authenticity and change in their life.<br><br>This is a comprehensive package to assist you with addressing current
+                                life matters as well as seeing your hopes and dreams unfold. This package will provide you with a sound platform for transforming, enriching and being in the present.<br><br>By the end of eight months you will notice a significant
+                                and profound effect from the changes that you have made and acknowledge “It’s okay to be different”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</article>
