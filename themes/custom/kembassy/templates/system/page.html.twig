@@ -45,46 +45,112 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+<div class="row">
+    <div class="col">
+        <nav class="navbar navbar-light navbar-expand-lg d-xl-flex align-items-xl-center">
+            <div class="container">
+                <a id="logo" class="navbar-brand" href="{{ front_page }}">
+                    <img src="{{ logopath }}"></a>
+                <a id="logo-1" class="navbar-brand" href="#"></a>
+                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
+                    {# Get menu items #}
+                    {% set items = simplify_menu('main') %}
 
-  {{ page.primary_menu }}
-{#  {{ page.secondary_menu }}#}
+                    {# Iterate menu tree #}
+                    <nav>
+                        <ul class="nav navbar-nav justify-content-end">
+                            {% for menu_item in items.menu_tree %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
 
-  {{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+<!-- breadcrumbs -->
+{% if not is_front %}
+    <div class="d-flex align-items-center breadcrumb-section">
+        <div class="container page-title">
+            <h1>{{ title }}</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
+                <li class="breadcrumb-item"><a href="#"><span>{{ title }}</span></a></li>
+            </ol>
+        </div>
+    </div>
+{% endif %}
 
-  {{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+{#{{ page.header }}#}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+{{ page.content }}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3"><img class="logo-img" src="{{ logopath }}">
+                    <p class="social-icons">
+                        <span class="follow-txt">Follow Us</span>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </p>
+                    <ul>
+                        <li class="follow-us-txt"></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 info-col">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Additional Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-col">
+                    <h3>NAVIGATION</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Additional Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 resources-col">
+                    <h3>RESOURCE</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Additional Info</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-  {% endif %}
-
-</div>{# /.layout-container #}
+</div>
+<div id="copyright-section">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="copyright">© All Right Reserved By www.kembassygroup.com 2021<br></p>
+            </div>
+        </div>
+    </div>
+</div>
