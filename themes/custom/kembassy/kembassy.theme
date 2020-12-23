@@ -4,3 +4,25 @@ function kembassy_preprocess_page(&$variables) {
   //$variables['logopath2'] = '/' . drupal_get_path('theme','kembassy') . 'assets/img/logo-2.png';
   $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
 }
+
+function kembassy_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  // Extract the day, month, year from event content type field_event_date_and_time field so we can easily display in node--event.html.twig
+  if (!empty($node->field_event_date_and_time)) {
+    $variables['event_day'] = $node->field_event_date_and_time->view([
+      'type' => 'datetime_custom',
+      'settings' => ['date_format' => 'd'],
+    ]);
+
+    $variables['event_month'] = $node->field_event_date_and_time->view([
+      'type' => 'datetime_custom',
+      'settings' => ['date_format' => 'M'],
+    ]);
+
+    $variables['event_year'] = $node->field_event_date_and_time->view([
+      'type' => 'datetime_custom',
+      'settings' => ['date_format' => 'Y'],
+    ]);
+  }
+}
