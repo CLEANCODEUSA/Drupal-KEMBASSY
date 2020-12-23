@@ -119,7 +119,7 @@
             {% if content.field_cta_description_text|field_value %}
               <p class="">{{ content.field_cta_description_text|field_value }}</p>
             {% endif %}
-            <a href="{{ url }}" class="btn btn-link download-free-ebook-btn" role="button">
+            <a href="{{ content.field_external_url|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
                 {{ content.field_cta_link_text|field_value }}
             </a>
         </div>
