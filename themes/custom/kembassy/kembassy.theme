@@ -1,15 +1,8 @@
 <?php
 
 function kembassy_preprocess_page(&$vars) {
+  //$vars['logopath2'] = '/' . drupal_get_path('theme','kembassy') . 'assets/img/logo-2.png';
   $vars['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
-
-  //add title variable to node.html.twig
-  if (isset($vars['node'])) {
-    $vars['title'] = $vars['node']->title->value;
-  }
-  else {
-    $vars['title'] = $vars['page']['#title'];
-  }
 }
 
 function kembassy_preprocess_node(&$variables) {
