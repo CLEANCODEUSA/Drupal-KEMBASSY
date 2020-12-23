@@ -1,4 +1,4 @@
-node--162.html.twig for contact page
+{#node--162.html.twig for contact page#}
 {#
 /**
  * @file
@@ -76,27 +76,88 @@ node--162.html.twig for contact page
 {#node.html.twig#}
 <article{{ attributes }}>
 
-{#  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {#  {{ title_prefix }}
+      {% if label and not page %}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+    
+      {% if display_submitted %}
+        <footer>
+          {{ author_picture }}
+          <div{{ author_attributes }}>
+            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+            {{ metadata }}
+          </div>
+        </footer>
+      {% endif %}#}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}#}
+    <div{{ content_attributes }}>
+        {#    {{ content }}#}
 
-
-<div{{ content_attributes }}>
-    {{ content }}
-</div>
-
+        <div class="container contact-section-2" id="contact-section-2">
+            <div class="row">
+                <div class="col-sm-auto col-md-auto col-lg-4 col-xl-4"><img src="/kembassy-d/themes/custom/kembassy/assets/img/rectangle.svg">
+                    <p class="name">Jacynth Ivey</p>
+                    <p class="address-1">260 Hospital Street</p>
+                    <p class="address-2">Birmingham B19 2YF, England, UK</p><a href="tel:518-512-9261" class="btn btn-link book-call-btn" role="button">Book One to One Call</a>
+                    <p class="email"><i class="fas fa-envelope-open-text"></i>&nbsp; info@jacynthivey.com</p>
+                    <p class="phone"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;<a href="tel:518-512-9261">+44 (0) 7825 123714<br></a></p>
+                    <p>We appreciate your comments and feedback and look forward to answering any questions you may have.<br>Those courageous steps can then develop into better relationships at home, in the community, in business, and with society.<br></p>
+                </div>
+                <div class="col-lg-8 col-xl-8">
+                    <form class="contact-form">
+                        <p>Please fill in all the necessary information &amp; we will get back to you momentarily.</p>
+                        <div class="form-row contact-form">
+                            <div class="col"><input class="form-control" type="text" placeholder="First Name"></div>
+                            <div class="col"><input class="form-control" type="text" placeholder="Last Name"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col"><input class="form-control" type="email" placeholder="Confirm Email"></div>
+                            <div class="col"><input class="form-control" type="email" placeholder="Email"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-6 col-xl-6"><input class="form-control" type="tel" placeholder="Phone"></div>
+                        </div>
+                        <p class="interest-q">What are you most interested in?</p>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Coaching</label></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Online Resources</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Keynote Speaker</label></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Training</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Workshops</label></div>
+                            </div>
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Personal Development Programmes</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Consultancy</label></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col"><textarea class="form-control" placeholder="Message / Comments"></textarea></div>
+                        </div>
+                    </form>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8"> add to mailing list for updates and free resources</label></div>
+                    <p class="contact-privacy-policy">By clicking submit you are consenting for all Personal Data collected by this questionnaire to be processed in accordance with our <a href="#">privacy policy</a>.</p><a href="tel:518-512-9261" class="btn btn-link contact-form-submit" role="button">Contact Glenisaah</a></div>
+            </div>
+        </div>
+    </div>
 </article>
