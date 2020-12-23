@@ -97,13 +97,13 @@
     </div>
 
 </article>#}
-{% if content.field_image|field_value %}
+{% if content.field_image_media|field_value %}
 <div id="section-2" class="container section-2" {{ attributes }}>
   <div class="row">
     <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
 {% endif %}
 
-{% if not content.field_image|field_value %}
+{% if not content.field_image_media|field_value %}
 <div class="container d-xl-flex justify-content-xl-center about-gd" {{ attributes }}>
   <div class="row d-xl-flex justify-content-xl-center section-2">
     <div class="col about-kembassy">
@@ -124,8 +124,11 @@
             </a>
         </div>
         <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center">
-          {% if content.field_image|field_value %}
+          {#{% if content.field_image|field_value %}
             {{ content.field_image|field_value }}
+          {% endif %}#}
+          {% if content.field_image_media|field_value %}
+            {{ content.field_image_media|field_value }}
           {% endif %}
         </div>
     </div>
