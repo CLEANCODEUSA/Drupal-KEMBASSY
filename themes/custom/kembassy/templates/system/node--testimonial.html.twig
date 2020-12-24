@@ -79,9 +79,9 @@
             <h2><strong>{{ label }}</strong><br></h2>
             <p>{{ content.body|field_value }}</p>
             <span class="username">{{ content.field_user_name|field_value }}</span>
-            {% if content.field_image %}
+            {% if content.field_image_media %}
                 <div class="comment-image">
-                    {{ content.field_image }}
+                    {{ content.field_image_media|field_value }}
                 </div>
             {% endif %}
         </div>
