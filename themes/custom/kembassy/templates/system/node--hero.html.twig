@@ -74,8 +74,8 @@
 #}
 
 <div class="container text-center d-flex justify-content-center align-items-center hero-section"
-     {% if content.field_hero_image|field_value %}
-         style="background-image: url('{{ file_url(node.field_hero_image.entity.fileuri) }}')"
+     {% if content.field_image %}
+         style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}')"
      {% endif %}>
 
     <div class="row">
