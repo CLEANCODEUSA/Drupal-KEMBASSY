@@ -8,3 +8,6 @@
 .region-sidebar-first, .region-sidebar-second, .region-footer, .region-content {
     padding: unset;
 }
+.media {
+    display: unset; 
+}
