@@ -76,7 +76,9 @@
 <div class="container d-xl-flex justify-content-xl-center about-gd">
     <div class="row d-xl-flex section-2">
         <div class="col about-kembassy">
+            {{ title_prefix }}
             <h2><strong>{{ label }}</strong><br></h2>
+            {{ title_suffix }}
             <p>{{ content.body|field_value }}</p>
             <span class="username">{{ content.field_user_name|field_value }}</span>
             {% if content.field_image_media %}
