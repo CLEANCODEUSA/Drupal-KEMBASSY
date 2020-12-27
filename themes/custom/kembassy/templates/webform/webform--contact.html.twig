@@ -21,8 +21,100 @@
  * @ingroup themeable
  */
 #}
-<form{{ attributes }}>
-  {{ title_prefix }}
-  {{ children }}
-  {{ title_suffix }}
-</form>
+{#<form{{ attributes }}>
+    {{ title_prefix }}
+    {{ children }}
+    {{ title_suffix }}
+</form>#}
+
+{#
+<div class="request-form">
+  <div class="form-wrap clearfix">
+    <div class="col-md-4 form-desc">
+      {{ element.elements.form_description }}
+    </div>
+    <div class="col-md-8">
+      <form{{ attributes }}>
+        {{ title_prefix }}
+        <div class="row">
+          <div class="col-md-6">
+            {{ element.elements.name }}
+            {{ element.elements.email }}
+            {{ element.elements.phone }}
+          </div>
+          <div class="col-md-6">
+            {{ element.elements.message }}
+            {{ element.form_build_id }}
+            {{ element.form_token }}
+            {{ element.form_id }}
+            {{ element.actions }}
+          </div>
+        </div>
+        {{ title_suffix }}
+      </form>
+    </div>
+  </div>
+</div>
+#}
+
+{#
+    first_name
+    last_name
+    email
+    phone
+    what_are_you_most_interested_in
+    message
+    add_to_mailing_list_for_updates_and_free_resources
+    markup
+#}
+
+<div class="col-lg-8 col-xl-8">
+    <div class="contact-form">
+        <form{{ attributes }}>
+            {{ title_prefix }}
+            <p>Please fill in all the necessary information & we will get back to you momentarily.</p>
+            <div class="form-row contact-form">
+                <div class="col">
+                    {{ element.elements.first_name }}
+                </div>
+                <div class="col">
+                    {{ element.elements.last_name }}
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    {{ element.elements.email }}
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    {{ element.elements.phone }}
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    {{ element.elements.what_are_you_most_interested_in }}
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    {{ element.elements.message }}
+                </div>
+            </div>
+
+            <div class="form-check">
+                {{ element.elements.add_to_mailing_list_for_updates_and_free_resources }}
+            </div>
+            <p class="contact-privacy-policy">
+                {{ element.elements.markup }}
+            </p>
+            {#<a class="btn btn-link contact-form-submit" type="submit" role="button">Contact Glenisaah</a>#}
+            {{ element.form_build_id }}
+            {{ element.form_token }}
+            {{ element.form_id }}
+            {{ element.elements.actions }}
+            {{ title_suffix }}
+        </form>
+    </div>
+</div>
