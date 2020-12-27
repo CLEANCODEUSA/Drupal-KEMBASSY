@@ -17,9 +17,6 @@
 .comment-image img {
     width: unset;
 }
-/*.btn-link:hover {
-    color: white;
-}*/
 .btn-primary:hover {
     color: #fff;
     border-color: unset;
