@@ -73,43 +73,50 @@
  * @ingroup themeable
  */
 #}
-{#node.html.twig#}
-<article{{ attributes }}>
-
-    {#  {{ title_prefix }}
-      {% if label and not page %}
-        <h2{{ title_attributes }}>
-          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h2>
-      {% endif %}
-      {{ title_suffix }}
-    
-      {% if display_submitted %}
-        <footer>
-          {{ author_picture }}
-          <div{{ author_attributes }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-            {{ metadata }}
-          </div>
-        </footer>
-      {% endif %}#}
 
 
-    <div{{ content_attributes }}>
-        {#{{ content }}#}
+{# 
+    content.field_button_link
+    content.field_button_text
+    content.field_hero_headline
+    content.field_image
+    content.field_hero_sub_headline
+#}
 
-        <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center membership-hero-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 col-xl-6">
-                        <div class="membership-callout">
-                            <h1>For Women In Business <br>Who Mean Business</h1>
-                            <p>Welcome to Nubian Sistas, a global business networking club where we provide a forum for our members to build.</p><button class="btn btn-primary" type="button">Join Now</button></div>
+{#<article{{ attributes }}>#}
+
+<div{{ content_attributes }}>
+
+    {#{{ content }}#}
+
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center membership-hero-bg"
+        {% if content.field_image %}
+            style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');background-position: center;"
+        {% endif %}>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xl-6">
+                    <div class="membership-callout">
+
+                        {{ title_prefix }}
+                        {% if content.field_hero_headline|field_value %}
+                            <h1>{{ content.field_hero_headline|field_value }}</h1>
+                        {% endif %}    
+                        {{ title_suffix }}
+
+                        <p>{{ content.field_hero_sub_headline|field_value }}</p>
+
+                        <a href="{{ content.field_button_link|field_value }}">
+                            <button class="btn btn-primary" type="button"> {{ content.field_button_text|field_value }}</button>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-</article>
+</div>
+
+{#</article>#}
