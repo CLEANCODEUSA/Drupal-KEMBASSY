@@ -4,8 +4,11 @@ global-styling:
       css/style.css: {}
 global-scripts:
   js:
-    theme:
-      js/scripts.js: {} 
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+#    - my_module/my_library
+#    - my_theme/my_library
 ke-styles:
   css:
     theme:
