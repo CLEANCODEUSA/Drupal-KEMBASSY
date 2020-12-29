@@ -2,6 +2,10 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+global-scripts:
+  js:
+    theme:
+      js/scripts.js: {} 
 ke-styles:
   css:
     theme:
