@@ -804,10 +804,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 //vdm
-//$settings['trusted_host_patterns'] = array(
-//  // '^www\.example\.com$',
-//  '^drupal-8-7-1\.dd$',
-//);
+$settings['trusted_host_patterns'] = array(
+ // '^www\.example\.com$',
+ '^localhost$',
+ // '^drupal-8-7-1\.dd$',
+);
 
 // echo '<pre>';
 // print_r($settings);
