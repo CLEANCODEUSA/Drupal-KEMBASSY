@@ -79,6 +79,8 @@
     field_cta_description_text
     field_image_media
     field_image_alignment
+    field_color_title
+    field_show_button
     field_content_to_link_to
     field_cta_link_text
     field_link_anchor_tag
@@ -93,7 +95,7 @@
 
         {# if image alignment is left #}
         {% if 'left' in content.field_image_alignment.0 %}
-            <div class="container section-2">
+            <div class="container section-2 cta">
                 <div class="row">
                     <div class="col-lg-6 col-xl-6 d-flex d-lg-flex justify-content-center justify-content-lg-center justify-content-xl-start">
                         {#<img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/laptop.svg">#}
@@ -104,13 +106,29 @@
                         {#<h2>KingdomHeir Women</h2>#}
                         {{ title_prefix }}
                         {% if content.field_cta_headline|field_value %}
-                            <h2>{{ content.field_cta_headline|field_value }}</h2>
+                            
+                            {% if content.field_color_title['#items'].value == '1' %}
+                                <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
+                                {#{% for i in content.field_cta_headline|field_value|slice(1, 2) %}#}
+                                    {# will iterate over 2 and 3 #}
+                                    {#<span class="pink">{{ i }}vdm</span>#}
+                                {#{% endfor %}#}
+                            {% else %}
+                                <h2>{{ content.field_cta_headline|field_value }}</h2>    
+                            {% endif %}
                         {% endif %}
                         {{ title_suffix }}
 
                         {#<p>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br><br>Every month we will give one of the network members the opportunity to showcase their business or we will have an inspirational speaker, with relevant business background, to provide great content and talk about relevant business matters for you and your business.<br><br>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br></p>#}
                         {% if content.field_cta_description_text|field_value %}
                             <p>{{ content.field_cta_description_text|field_value }}</p>
+                        {% endif %}
+
+                        {#<a href="heir.html" class="btn btn-link download-free-ebook-btn" role="button">More About Kingdom Embassy</a>#}
+                        {% if content.field_show_button['#items'].value == '1' %}
+                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+                                {{ content.field_cta_link_text|field_value }}
+                            </a>
                         {% endif %}
                     </div>
                 </div>
