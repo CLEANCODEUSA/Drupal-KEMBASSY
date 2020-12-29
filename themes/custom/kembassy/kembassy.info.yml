@@ -13,7 +13,6 @@ stylesheets-remove:
 libraries:
   - kembassy/global-styling
   - kembassy/ke-styles
-  - kembassy/global-scripts
 
 # Regions.
 regions:
