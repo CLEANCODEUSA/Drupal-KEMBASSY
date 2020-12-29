@@ -93,83 +93,89 @@
 
         {# if image alignment is left #}
         {% if 'left' in content.field_image_alignment.0 %}
-            <div class="row">
-                <div class="col-lg-6 col-xl-6 d-flex d-lg-flex justify-content-center justify-content-lg-center justify-content-xl-start">
-                    {#<img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/laptop.svg">#}
-                    {{ content.field_image_media|field_value }}
-                </div>
-                <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 title">
+            <div class="container section-2">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 d-flex d-lg-flex justify-content-center justify-content-lg-center justify-content-xl-start">
+                        {#<img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/laptop.svg">#}
+                        {{ content.field_image_media|field_value }}
+                    </div>
+                    <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 title">
 
-                    {#<h2>KingdomHeir Women</h2>#}
-                    {{ title_prefix }}
-                    {% if content.field_cta_headline|field_value %}
-                        <h2>{{ content.field_cta_headline|field_value }}</h2>
-                    {% endif %}
-                    {{ title_suffix }}
+                        {#<h2>KingdomHeir Women</h2>#}
+                        {{ title_prefix }}
+                        {% if content.field_cta_headline|field_value %}
+                            <h2>{{ content.field_cta_headline|field_value }}</h2>
+                        {% endif %}
+                        {{ title_suffix }}
 
-                    {#<p>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br><br>Every month we will give one of the network members the opportunity to showcase their business or we will have an inspirational speaker, with relevant business background, to provide great content and talk about relevant business matters for you and your business.<br><br>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br></p>#}
-                    {% if content.field_cta_description_text|field_value %}
-                        <p>{{ content.field_cta_description_text|field_value }}</p>
-                    {% endif %}
+                        {#<p>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br><br>Every month we will give one of the network members the opportunity to showcase their business or we will have an inspirational speaker, with relevant business background, to provide great content and talk about relevant business matters for you and your business.<br><br>Nubian Sistas is designed to support you with valuable advice, support and guidance for you and your business from your sistas across the globe.<br></p>#}
+                        {% if content.field_cta_description_text|field_value %}
+                            <p>{{ content.field_cta_description_text|field_value }}</p>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         {% endif %}
 
         {# if image alignment is right #}
         {% if 'right' in content.field_image_alignment.0 %}
-            <div class="row">
-                <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
+            <div class="container section-2" id="section-2">
+                <div class="row">
+                    <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
 
-                    {#<h2><strong>About Kingdom Embassy</strong><br></h2>#}
-                    {{ title_prefix }}
-                    {% if content.field_cta_headline|field_value %}
-                        <h2>{{ content.field_cta_headline|field_value }}</h2>
-                    {% endif %}
-                    {{ title_suffix }}
+                        {#<h2><strong>About Kingdom Embassy</strong><br></h2>#}
+                        {{ title_prefix }}
+                        {% if content.field_cta_headline|field_value %}
+                            <h2>{{ content.field_cta_headline|field_value }}</h2>
+                        {% endif %}
+                        {{ title_suffix }}
 
-                    {#<p>Rev. Jones is a transformational leader. She founded Linda P. Jones Ministries for the purpose of imparting God’s Word, as a means by which people can take positive steps to transform their lives. <br><br>Those courageous steps can then develop into better relationships at home, in the community, in business, and with society.<br></p>#}
-                    {% if content.field_cta_description_text|field_value %}
-                        <p>{{ content.field_cta_description_text|field_value }}</p>
-                    {% endif %}
+                        {#<p>Rev. Jones is a transformational leader. She founded Linda P. Jones Ministries for the purpose of imparting God’s Word, as a means by which people can take positive steps to transform their lives. <br><br>Those courageous steps can then develop into better relationships at home, in the community, in business, and with society.<br></p>#}
+                        {% if content.field_cta_description_text|field_value %}
+                            <p>{{ content.field_cta_description_text|field_value }}</p>
+                        {% endif %}
 
-                    {#<a href="heir.html" class="btn btn-link download-free-ebook-btn" role="button">More About Kingdom Embassy</a>#}
-                    {% if content.field_show_button['#items'].value == '1' %}
-                        <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
-                            {{ content.field_cta_link_text|field_value }}
-                        </a>
-                    {% endif %}
-                </div>
-                <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center">
-                    {#<img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/portrait.svg">#}
-                    {{ content.field_image_media|field_value }}
+                        {#<a href="heir.html" class="btn btn-link download-free-ebook-btn" role="button">More About Kingdom Embassy</a>#}
+                        {% if content.field_show_button['#items'].value == '1' %}
+                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+                                {{ content.field_cta_link_text|field_value }}
+                            </a>
+                        {% endif %}
+                    </div>
+                    <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center">
+                        {#<img class="portrait-1" src="/kembassy-d/themes/custom/kembassy/assets/img/portrait.svg">#}
+                        {{ content.field_image_media|field_value }}
+                    </div>
                 </div>
             </div>
         {% endif %}
 
         {# if image alignment isn't set #}
         {% if content.field_image_alignment.0 is null %}
-            <div class="row d-xl-flex justify-content-xl-center section-2">
-                <div class="col about-kembassy">
+            <div class="container d-xl-flex justify-content-xl-center about-gd">
+                <div class="row d-xl-flex justify-content-xl-center section-2">
+                    <div class="col about-kembassy">
 
-                    {#<h2><strong>About Glenisaah Deborah</strong><br></h2>#}
-                    {{ title_prefix }}
-                    {% if content.field_cta_headline|field_value %}
-                        <h2>{{ content.field_cta_headline|field_value }}</h2>
-                    {% endif %}
-                    {{ title_suffix }}
+                        {#<h2><strong>About Glenisaah Deborah</strong><br></h2>#}
+                        {{ title_prefix }}
+                        {% if content.field_cta_headline|field_value %}
+                            <h2>{{ content.field_cta_headline|field_value }}</h2>
+                        {% endif %}
+                        {{ title_suffix }}
 
-                    {#<p>12 Principles for Soul Survivors will provide you with keys and the strength to help you make it through any struggle, difficulty or adversity that you are experiencing right now. Each step provides a handle that you can take hold of as you step up to the next level of fulfillment in your life. <br><br>These 12 principles are taken from my personal story in my book Soul Survivor which documents my journey through many terrifying experiences from childhood to adulthood. These principles will help you to survive, to outlast, what in the past have devastated others, so that you could eventually thrive.<br></p>#}
-                    {% if content.field_cta_description_text|field_value %}
-                        <p>{{ content.field_cta_description_text|field_value }}</p>
-                    {% endif %}
+                        {#<p>12 Principles for Soul Survivors will provide you with keys and the strength to help you make it through any struggle, difficulty or adversity that you are experiencing right now. Each step provides a handle that you can take hold of as you step up to the next level of fulfillment in your life. <br><br>These 12 principles are taken from my personal story in my book Soul Survivor which documents my journey through many terrifying experiences from childhood to adulthood. These principles will help you to survive, to outlast, what in the past have devastated others, so that you could eventually thrive.<br></p>#}
+                        {% if content.field_cta_description_text|field_value %}
+                            <p>{{ content.field_cta_description_text|field_value }}</p>
+                        {% endif %}
 
-                    <!--<a href="tel:518-512-9261" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a>-->
-                    {#<a href="contact.html" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a>#}
-                    {% if content.field_show_button['#items'].value == '1' %}
-                        <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
-                            {{ content.field_cta_link_text|field_value }}
-                        </a>
-                    {% endif %}
+                        <!--<a href="tel:518-512-9261" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a>-->
+                        {#<a href="contact.html" class="btn btn-link download-free-ebook-btn" role="button">Contact Glenisaah</a>#}
+                        {% if content.field_show_button['#items'].value == '1' %}
+                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+                                {{ content.field_cta_link_text|field_value }}
+                            </a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         {% endif %}
