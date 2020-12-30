@@ -91,7 +91,7 @@
 
     <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center membership-hero-bg"
         {% if content.field_image %}
-            style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');background-position: center;"
+            style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');background-position: top;"
         {% endif %}>
 
         <div class="container">
