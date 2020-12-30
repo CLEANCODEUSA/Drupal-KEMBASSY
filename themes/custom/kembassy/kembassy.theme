@@ -6,7 +6,6 @@ function kembassy_preprocess_html(&$variables) {
 
 function kembassy_preprocess_page(&$variables) {
   $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
-
 }
 
 function kembassy_preprocess_node(&$variables) {
