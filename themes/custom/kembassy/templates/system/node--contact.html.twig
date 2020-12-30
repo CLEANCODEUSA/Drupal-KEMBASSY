@@ -86,51 +86,54 @@ field_last_name
 
 {#<article{{ attributes }}>#}
 
-    {#<div{{ content_attributes }}>#}
+{#<div{{ content_attributes }}>#}
 
-        {#{{ content }}#}
+<div class="col-sm-auto col-md-auto col-lg-4 col-xl-4">
 
-        <div class="col-sm-auto col-md-auto col-lg-4 col-xl-4">
+    {% if content.field_image_media|field_value %}
+        {{ content.field_image_media|field_value }}
+    {% endif %}
 
-            {% if content.field_image_media|field_value %}
-                {{ content.field_image_media|field_value }}
+    {{ title_prefix }}
+    {% if content.field_first_name|field_value %}
+        <p class="name">
+            <span>
+                {{ content.field_first_name|field_value }}
+            </span>
+
+            {% if content.field_last_name|field_value %}
+                <span>
+                    {{ content.field_last_name|field_value }}
+                </span>
             {% endif %}
+        </p>
+    {% endif %}
+    {{ title_suffix }}
 
-            {% if content.field_first_name|field_value %}
-                <p class="name">
-                    <span>
-                        {{ content.field_first_name|field_value }}
-                    </span>
+    {% if content.field_event_location_address|field_value %}
+        <p class="address-1">{{ content.field_event_location_address|field_value }}</p>
+    {% endif %}
 
-                    {% if content.field_last_name|field_value %}
-                        <span>
-                            {{ content.field_last_name|field_value }}
-                        </span>
-                    {% endif %}
-                </p>
-            {% endif %}
+    <a href="tel:{{ content.field_phone|field_value }}" class="btn btn-link book-call-btn" role="button">
+        Book One to One Call
+    </a>
 
-            {% if content.field_event_location_address|field_value %}
-                <p class="address-1">{{ content.field_event_location_address|field_value }}</p>
-            {% endif %}
+    <p class="email">
+        <i class="fas fa-envelope-open-text"></i>
+        {{ content.field_email|field_value }}
+    </p>
 
-            <a href="tel:{{ content.field_phone|field_value }}" class="btn btn-link book-call-btn" role="button">
-                Book One to One Call
-            </a>
+    <p class="phone">
+        <i class="fab fa-whatsapp"></i>
+        <a href="tel:{{ content.field_phone|field_value }}">{{ content.field_phone|field_value }}</a>
+    </p>
 
-            <p class="email">
-                <i class="fas fa-envelope-open-text"></i>
-                {{ content.field_email|field_value }}
-            </p>
+    <p>
+        {{ content.field_description|field_value }}
+    </p>
+</div>
 
-            <p class="phone">
-                <i class="fab fa-whatsapp"></i>
-                <a href="tel:{{ content.field_phone|field_value }}">{{ content.field_phone|field_value }}</a>
-            </p>
+{#{{ content }}#}
 
-            <p>
-                {{ content.field_description|field_value }}
-            </p>
-        </div>
-    {#</div>#}
+{#</div>#}
 {#</article>#}
