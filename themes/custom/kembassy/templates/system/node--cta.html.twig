@@ -126,7 +126,6 @@
                     </div>
                 </div>
             </div>
-{#        {% endif %}#}
 
         {# if image alignment is right #}
         {% elseif 'right' in content.field_image_alignment.0 %}
@@ -161,7 +160,6 @@
                     </div>
                 </div>
             </div>
-{#        {% endif %}#}
 
         {# if image alignment isn't set #}
         {% elseif content.field_image_alignment.0 is null %}
@@ -194,7 +192,5 @@
                 </div>
             </div>
         {% endif %}
-
     </div>
-
 </article>
