@@ -972,10 +972,6 @@ a.nav-link {
   margin-left: 20px;
 }
 
-.membership-level h1 {
-  /*border: 3px solid red;*/
-}
-
 .membership-level.sapphire {
   background-color: #E41DEB;
 }
