@@ -82,13 +82,17 @@
 
         <div class="container contact-section-2" id="contact-section-2">
             <div class="row">
-                
-                {# use twig_tweak module function to print nodes #}
-                {# contact #}
-                {{ drupal_entity('node', 187) }}
 
-                {# webform  #}
-                {{ drupal_entity('webform', 'contact') }}
+                {# use twig_tweak module function to print nodes #}
+                <div class="col col-sm-12 col-md-4">
+                    {# contact card #}
+                    {{ drupal_entity('node', 187) }}
+                </div>
+
+                <div class="col col-sm-12 col-md-8">
+                    {# webform  #}
+                    {{ drupal_entity('webform', 'contact_us_webform') }}
+                </div>
             </div>
         </div>
     </div>
