@@ -719,7 +719,6 @@ a.nav-link {
 .breadcrumb-section {
   background-image: url('../../assets/img/breadcrumb-sec-bg.svg');
   height: 180px;
-  /*background-repeat: no-repeat;*/
   background-position: center;
   background-color: blue;
 }
