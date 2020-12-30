@@ -111,26 +111,28 @@ field_internal_content
 field_pdf
 #}
 
-<div class="col-lg-4 col-xl-4 blog-post">
-    <p class="title">{{ event_day|field_value }}</p>
-    <p class="created-date">{{ event_month|field_value }}</p>
-    <p class="created-date">{{ event_year|field_value }}</p>
-    
-    {#{{ title_prefix }}
-    {% if label and not page %}
-    <p{{ title_attributes }} class="blog-post-desc">
-         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </p>
-    {% endif %}
-    {{ title_sufix }}#}
-    
-    {{ title_prefix}}
-    {% if label and not page %}
-    <p{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </p>
-    {% endif %}
-    {{ title_suffix}}
-    
-    <a class="read-more" href="{{ url }}">Read More</a>
+<div{{ attributes }}>
+    <div class="col-lg-4 col-xl-4 blog-post">
+        <p class="title">{{ event_day|field_value }}</p>
+        <p class="created-date">{{ event_month|field_value }}</p>
+        <p class="created-date">{{ event_year|field_value }}</p>
+
+        {#{{ title_prefix }}
+        {% if label and not page %}
+        <p{{ title_attributes }} class="blog-post-desc">
+             <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </p>
+        {% endif %}
+        {{ title_sufix }}#}
+
+        {{ title_prefix}}
+        {% if label and not page %}
+            <p{{ title_attributes }}>
+                <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            </p>
+        {% endif %}
+        {{ title_suffix}}
+
+        <a class="read-more" href="{{ url }}">Read More</a>
+    </div>
 </div>
