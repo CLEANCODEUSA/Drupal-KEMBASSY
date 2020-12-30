@@ -69,7 +69,6 @@ body {
 
 .hero-bg {
   background-image: url('../../assets/img/hero-bg.svg');
-  /*width: 100% !important;*/
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 800px;
