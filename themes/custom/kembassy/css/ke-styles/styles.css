@@ -820,23 +820,23 @@ a.nav-link {
   line-height: 32px;
 }
 
-.membership-prog .membership-callout h1 {
+.membership-prog .membership-callout h1, .membership-hero-bg .membership-callout h1 {
   font-size: 36px;
 }
 
-.membership-prog .membership-callout {
+.membership-prog .membership-callout, .membership-hero-bg .membership-callout {
   background-color: #008BFF;
   color: white;
   padding: 40px 40px;
 }
 
-.membership-callout .btn {
+.membership-callout .btn, .membership-hero-bg .btn {
   color: #0876D5;
   background-color: white;
   border-radius: unset;
 }
 
-.membership-callout p {
+.membership-callout p, .membership-hero-bg p {
   margin: 20px auto;
 }
 
