@@ -9,7 +9,8 @@ function kembassy_preprocess_page(&$variables) {
 function kembassy_preprocess_node(&$variables) {
   $node = $variables['node'];
 
-  // Extract the day, month, year from event content type field_event_date_and_time field so we can easily display in node--event.html.twig
+  // Extract the day, month, year from event content type field_event_date_and_time field so 
+  // we can easily display in node--event.html.twig
   if (!empty($node->field_event_date_and_time)) {
     $variables['event_day'] = $node->field_event_date_and_time->view([
       'type' => 'datetime_custom',
