@@ -665,6 +665,7 @@ a.nav-link {
 
 .contact-section-2 img {
   width: 320px;
+  marginp-top: 24px;
 }
 
 .contact-section-2 .address-1 {
@@ -718,7 +719,9 @@ a.nav-link {
 .breadcrumb-section {
   background-image: url('../../assets/img/breadcrumb-sec-bg.svg');
   height: 180px;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  background-color: blue;
 }
 
 .divider-section {
