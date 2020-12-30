@@ -96,7 +96,6 @@ body {
 }
 
 .membership-hero-bg {
-  /*background-image: url('../../assets/img/membership-hero-bg.png');*/
   width: 100% !important;
   background-repeat: no-repeat;
   background-size: cover;
