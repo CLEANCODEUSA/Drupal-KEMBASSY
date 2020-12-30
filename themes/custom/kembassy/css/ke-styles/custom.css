@@ -31,3 +31,13 @@
 #user-login-form .form-submit {
     text-transform: uppercase;
 }
+@media (min-width: 300px) {
+    .prayer-section .contextual-region {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.prayer-section .contextual-region {
+    max-width: 300px;
+}
