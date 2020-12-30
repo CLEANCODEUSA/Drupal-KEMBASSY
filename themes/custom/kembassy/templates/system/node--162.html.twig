@@ -78,15 +78,14 @@
 
     <div{{ content_attributes }}>
 
-        {#{{ content }}#}
-
         <div class="container contact-section-2" id="contact-section-2">
             <div class="row">
 
                 {# use twig_tweak module function to print nodes #}
                 <div class="col col-sm-12 col-md-4">
                     {# contact card #}
-                    {{ drupal_entity('node', 187) }}
+                    {#{{ drupal_entity('node', 187) }}#}
+                    {{ content }}
                 </div>
 
                 <div class="col col-sm-12 col-md-8">
