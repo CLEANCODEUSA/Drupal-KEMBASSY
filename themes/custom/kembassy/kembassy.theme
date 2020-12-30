@@ -5,7 +5,6 @@ function kembassy_preprocess_html(&$variables) {
 }
 
 function kembassy_preprocess_page(&$variables) {
-  //$variables['logopath2'] = '/' . drupal_get_path('theme','kembassy') . 'assets/img/logo-2.png';
   $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
 
 //  $node = \Drupal::routeMatch()->getParameter('node');
