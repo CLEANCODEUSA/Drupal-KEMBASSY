@@ -8,14 +8,14 @@ function kembassy_preprocess_page(&$variables) {
   //$variables['logopath2'] = '/' . drupal_get_path('theme','kembassy') . 'assets/img/logo-2.png';
   $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
 
-  $node = \Drupal::routeMatch()->getParameter('node');
-  //$path = drupal_get_path('theme', 'kembassy');
-  $bundle = $node->bundle();
-
-  if ($bundle == 'modular_page') {
-    //echo 'coming here';
-    $variables['#attached']['library'][] = 'kembassy/global-scripts';
-  }
+//  $node = \Drupal::routeMatch()->getParameter('node');
+//  //$path = drupal_get_path('theme', 'kembassy');
+//  $bundle = $node->bundle();
+//
+//  if ($bundle == 'modular_page') {
+//    //echo 'coming here';
+//    $variables['#attached']['library'][] = 'kembassy/global-scripts';
+//  }
 }
 
 function kembassy_preprocess_node(&$variables) {
