@@ -24,3 +24,10 @@
 .container.section-2 {
     margin: 80px auto;
 }
+#user-login-form, #user-pass{
+    max-width: 512px;
+    margin: 80px auto;
+}
+#user-login-form .form-submit {
+    text-transform: uppercase;
+}
