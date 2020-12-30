@@ -112,7 +112,7 @@ field_pdf
 #}
 
 <div{{ attributes }}>
-    <div class="col-lg-4 col-xl-4 blog-post">
+    <div class="col blog-post">
         <p class="title">{{ event_day|field_value }}</p>
         <p class="created-date">{{ event_month|field_value }}</p>
         <p class="created-date">{{ event_year|field_value }}</p>
@@ -127,9 +127,9 @@ field_pdf
 
         {{ title_prefix}}
         {% if label and not page %}
-            <p{{ title_attributes }}>
+            <h5{{ title_attributes }}>
                 <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-            </p>
+            </h5>
         {% endif %}
         {{ title_suffix}}
 
