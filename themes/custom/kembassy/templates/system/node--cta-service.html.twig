@@ -133,7 +133,7 @@ loading node--cta-service.html.twig
         {% elseif 'right' in content.field_image_alignment.0 %}
             <div class="container section-2" id="section-2">
                 <div class="row">
-                    <div class="col-sm-auto col-md-auto col-lg-6 col-xl-6 about-kembassy">
+                    <div class="col-lg-7 col-xl-7">
 
                         {{ title_prefix }}
                         {% if content.field_cta_headline|field_value %}
@@ -157,8 +157,9 @@ loading node--cta-service.html.twig
                             </a>
                         {% endif %}
                     </div>
-                    <div class="col-lg-6 col-xl-6 d-lg-flex justify-content-lg-center">
+                    <div class="col-lg-5 col-xl-5">
                         {{ content.field_image_media|field_value }}
+                        <div>{{ content.field_cta_image_desc|field_value }}</div>
                     </div>
                 </div>
             </div>
