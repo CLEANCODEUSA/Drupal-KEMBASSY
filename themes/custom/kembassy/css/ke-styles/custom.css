@@ -41,3 +41,9 @@
 .prayer-section .contextual-region {
     max-width: 300px;
 }
+.contact-section-2 .form-item {
+    margin-top: unset;
+}
+.contact-section-2 .form-checkboxes .form-item, .contact-section-2 legend{
+    margin-bottom: 20px !important;
+}
