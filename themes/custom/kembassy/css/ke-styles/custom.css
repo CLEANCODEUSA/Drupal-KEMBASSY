@@ -50,3 +50,12 @@
 .webform-submission-form hr.webform-horizontal-rule {
     margin: 3.5em 0;
 }
+label.option {
+    color: #A1A0AA;
+}
+div#edit-markup {
+    color: #A1A0AA;
+}
+label {
+    color: #A1A0AA;
+}
