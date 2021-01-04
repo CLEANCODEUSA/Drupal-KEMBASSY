@@ -83,21 +83,28 @@
 <article{{ attributes }}>
     <div class="services">
         <div class="divider-section" {#{{ content_attributes }}#}>
-            <div class="d-flex align-items-center divider-section">
-                <div class="container d-xl-flex justify-content-xl-center">
-                    {% if content.field_cta_description_text|field_value %}
-                        <div class="">
-                            {{ content.field_cta_description_text|field_value }}
-                        </div>
-                    {% endif %}
 
-                    {% if content.field_cta_link_text|field_value %}
-                        <a class="btn btn-link" href="{{ content.field_external_url|field_value }}" role="button">
-                            {{ content.field_cta_link_text|field_value }}
-                        </a>
-                    {% endif %}
+
+            <div class="d-flex align-items-center section-4 divider-section">
+                <div class="container d-xl-flex justify-content-xl-center">
+                    <div class="row">
+                        <div class="col-12 d-xl-flex justify-content-xl-center">
+                            {% if content.field_cta_description_text|field_value %}
+                                {{ content.field_cta_description_text|field_value }}
+                            {% endif %}
+                        </div>
+                        <div class="col-12 d-flex d-xl-flex justify-content-center justify-content-xl-center">
+                            {% if content.field_cta_link_text|field_value %}
+                                <a class="btn btn-link" href="{{ content.field_external_url|field_value }}" role="button">
+                                    {{ content.field_cta_link_text|field_value }}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </article>
