@@ -139,6 +139,14 @@ html, body {
   color: black;
 }
 
+a.nav-link {
+  /*font-family: 'El Messiri';*/
+  font-size: 20px;
+}
+.navbar-nav .nav-link {
+    margin: 0 10px;
+}
+
 .row.main-menu {
   border: 3px solid red;
   max-height: 100px;
@@ -645,11 +653,6 @@ input.form-control.email-sub-input::placeholder {
 
 .about-gd .username {
   color: #008BFF;
-  font-size: 20px;
-}
-
-a.nav-link {
-  /*font-family: 'El Messiri';*/
   font-size: 20px;
 }
 
