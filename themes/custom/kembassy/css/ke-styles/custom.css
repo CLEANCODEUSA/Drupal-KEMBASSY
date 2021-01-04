@@ -47,3 +47,6 @@
 .contact-section-2 .form-checkboxes .form-item, .contact-section-2 legend{
     margin-bottom: 20px !important;
 }
+.webform-submission-form hr.webform-horizontal-rule {
+    margin: 3.5em 0;
+}
