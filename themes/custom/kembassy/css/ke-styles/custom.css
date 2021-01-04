@@ -59,3 +59,7 @@ div#edit-markup {
 label {
     color: #A1A0AA;
 }
+.form-checkboxes .form-item, .form-radios .form-item{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
