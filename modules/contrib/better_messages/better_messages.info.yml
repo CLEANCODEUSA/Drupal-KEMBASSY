@@ -1,0 +1,12 @@
+name: Better Messages
+type: module
+description: This module adds simple functions to make Drupal messages look and act better.
+package: User interface
+# core: 8.x
+configure: better_messages.settings_form
+
+# Information added by Drupal.org packaging script on 2018-02-03
+version: '8.x-1.0-alpha2'
+core: '8.x'
+project: 'better_messages'
+datestamp: 1517663884
