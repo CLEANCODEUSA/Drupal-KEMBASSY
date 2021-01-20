@@ -613,6 +613,7 @@ input.form-control.email-sub-input::placeholder {
 
 .blog-post {
   padding: 0 40px 0 0;
+  line-height: 32px;
 }
 
 @media (min-width: 300px) {
