@@ -73,7 +73,7 @@
  */
 #}
 
-<div class="text-center d-flex justify-content-center align-items-center hero-section"
+<div class="text-left d-flex justify-content-center align-items-center hero-section"
      {% if content.field_image %}
          style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');"
      {% endif %}>
@@ -86,7 +86,7 @@
         {% endif %}
 
         {% if content.field_hero_sub_headline|field_value %}
-            <div class="col-12 d-xl-flex justify-content-xl-center">
+            <div class="col-12">
                 <h1 class="hero-sub-headline">{{ content.field_hero_sub_headline|field_value }}</h1>
             </div>
         {% endif %}
