@@ -1069,15 +1069,6 @@ input.form-control.email-sub-input::placeholder {
   margin-left: -1em;
 }
 
-/*.contextual-region ul li::before{
-  content: unset !important;
-  color: unset !important;
-  font-weight: unset !important;
-  display: unset !important;
-  width: unset !important;
-  margin-left: unset !important;
-}*/
-
 .coaching .section-1, .coaching .section-2 {
   margin: 80px auto;
 }
