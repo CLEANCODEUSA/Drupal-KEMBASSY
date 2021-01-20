@@ -1137,16 +1137,70 @@ input.form-control.email-sub-input::placeholder {
   margin: auto;
 }
 
-@media (min-width: 300px){
-    .hero-section {
-        background-size: cover;
-        background-position: center;
-        height: 400px;
-    }
+
+@media (min-width: 300px) {
+  .hero-sub-headline {
+    font-family: Edwardian Script ITC;
+    color: #251D44;
+    font-size: 56px;
+  }
 }
 
-@media (min-width: 768px){
-    .hero-section {
-        height: 712px !important;
-    }
+@media (min-width: 768px) {
+  .hero-sub-headline {
+    font-family: Edwardian Script ITC;
+    color: #251D44;
+    font-size: 104px;
+  }
+}
+
+.hero-image {
+}
+
+.container.hero-section {
+  max-width: 100% !important;
+  /*min-height: 712px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+@media (min-width: 300px) {
+  .hero-section .hero-headline {
+    font-size: 56px;
+    color: #251D44;
+    font-family: Edwardian Script ITC;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section .hero-headline {
+    font-size: 104px;
+    color: #251D44;
+    font-family: Edwardian Script ITC;
+  }
+}
+
+.footer-heading a {
+  color: #4D3D80;
+}
+
+.copyright a {
+  color: #purple;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 712px !important;
+  }
+}
+
+@media (min-width: 300px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
 }
