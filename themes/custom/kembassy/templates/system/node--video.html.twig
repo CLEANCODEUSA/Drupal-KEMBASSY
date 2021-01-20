@@ -77,18 +77,9 @@
     <div class="">
         <div{#{{ content_attributes }}#}>
             <div class="video">
-{#                <div class="row">#}
-{#                    <div class="col-12">#}
-{#                        {% if content.field_video %}#}
-{#                            {{ content.field_video|field_value }}#}
-{#                            {{ content.field_video.0 }}#}
-{#                        {% endif %}#}
-{#                    </div>#}
-{#                </div>#}
-
                 <video width="100%" height="auto" controls>
-                  <source src="{{ file_url(content.field_video|field_target_entity.field_media_video_file.entity.uri.value) }}"
-                  Your browser does not support the video tag.
+                    <source src="{{ file_url(content.field_video|field_target_entity.field_media_video_file.entity.uri.value) }}"
+                            Your browser does not support the video tag.
                 </video>
             </div>
         </div>
