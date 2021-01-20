@@ -1152,7 +1152,7 @@ input.form-control.email-sub-input::placeholder {
   .hero-sub-headline {
     font-family: Edwardian Script ITC;
     color: #251D44;
-    font-size: 104px;
+    font-size: 120px;
   }
 }
 
@@ -1177,7 +1177,7 @@ input.form-control.email-sub-input::placeholder {
 
 @media (min-width: 768px) {
   .hero-section .hero-headline {
-    font-size: 104px;
+    font-size: 120px;
     color: #251D44;
     font-family: Edwardian Script ITC;
   }
