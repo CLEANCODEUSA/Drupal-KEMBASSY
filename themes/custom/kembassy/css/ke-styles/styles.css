@@ -1206,3 +1206,10 @@ input.form-control.email-sub-input::placeholder {
     height: 400px;
   }
 }
+
+.video {
+  width: 100% !important;
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+}
