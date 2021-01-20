@@ -73,18 +73,18 @@
  * @ingroup themeable
  */
 #}
-
-{#<article{{ attributes }}>#}
-
-    <div{#{{ content_attributes }}#}>
-        <div id="video" class="video video-section" style="width:100% !important;border:3px solid red;">
-            <div class="row">
-                <div class="col-12">
-                    {% if content.field_video %}
-                        {{ content.field_video }}
-                    {% endif %}
-                </div>
+<article{{ attributes }}>
+    <div class="">
+        <div{#{{ content_attributes }}#}>
+            <div class="video">
+{#                <div class="row">#}
+{#                    <div class="col-12">#}
+                        {% if content.field_video %}
+                            {{ content.field_video }}
+                        {% endif %}
+{#                    </div>#}
+{#                </div>#}
             </div>
         </div>
     </div>
-{#</article>#}
+</article>
