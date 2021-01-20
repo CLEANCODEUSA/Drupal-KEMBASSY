@@ -1137,14 +1137,24 @@ input.form-control.email-sub-input::placeholder {
   margin: auto;
 }
 
-.container.hero-section {
+/*.container.hero-section {
   max-width: 100% !important;
   min-height: 712px;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
+}*/
+
+@media (min-width: 300px){
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
 }
 
-.hero-section .hero-headline {
-  font-size: 72px;
+@media (min-width: 768px){
+    .hero-section {
+        height: 712px !important;
+    }
 }
