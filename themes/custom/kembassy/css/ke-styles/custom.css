@@ -22,7 +22,7 @@
     border-color: unset;
 }
 .container.section-2 {
-    margin: 80px auto;
+    margin: 80px auto 0px auto;
 }
 #user-login-form, #user-pass{
     max-width: 512px;
