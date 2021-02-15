@@ -10,9 +10,9 @@
 }*/
 
 @media (min-width: 992px){
-    .navbar-brand img {
-        height: 72px;
-    }
+  .navbar-brand img {
+    height: 72px;
+  }
 }
 
 .nav.navbar-nav.justify-content-end {
@@ -149,7 +149,7 @@ a.nav-link {
   font-size: 18px;
 }
 .navbar-nav .nav-link {
-    margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 30px;
 }
 
 .row.main-menu {
@@ -645,7 +645,10 @@ input.form-control.email-sub-input::placeholder {
 }
 
 .footer-clean .social-icons {
-  margin-top: 20px;
+  margin: 20px auto;
+}
+.social-icons img {
+  margin: auto 5px;
 }
 
 .footer-clean .logo-img {
@@ -1188,6 +1191,8 @@ input.form-control.email-sub-input::placeholder {
 
 .footer-heading a {
   color: #4D3D80;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .copyright a {
@@ -1219,12 +1224,12 @@ input.form-control.email-sub-input::placeholder {
 }
 
 .blue-bar{
-    background-color: #1F1441;
-    min-height: 50px;
-    width: 100%;
+  background-color: #1F1441;
+  min-height: 50px;
+  width: 100%;
 }
 
 .cursive-title{
-    font-size: 60px;
-    font-family: Edwardian Script ITC;
+  font-size: 60px;
+  font-family: Edwardian Script ITC;
 }
