@@ -140,10 +140,10 @@ html, body {
 }
 
 a.nav-link {
-  font-size: 20px;
+  font-size: 18px;
 }
 .navbar-nav .nav-link {
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 30px;
 }
 
 .row.main-menu {
@@ -1153,7 +1153,7 @@ input.form-control.email-sub-input::placeholder {
   .hero-sub-headline {
     font-family: Edwardian Script ITC;
     color: #251D44;
-    font-size: 120px;
+    font-size: 112px;
   }
 }
 
@@ -1162,7 +1162,6 @@ input.form-control.email-sub-input::placeholder {
 
 .container.hero-section {
   max-width: 100% !important;
-  /*min-height: 712px;*/
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -1178,7 +1177,7 @@ input.form-control.email-sub-input::placeholder {
 
 @media (min-width: 768px) {
   .hero-section .hero-headline {
-    font-size: 120px;
+    font-size: 112px;
     color: #251D44;
     font-family: Edwardian Script ITC;
   }
