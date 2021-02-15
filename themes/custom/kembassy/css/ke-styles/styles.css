@@ -5,8 +5,14 @@
   }
 }
 
-.navbar-brand img {
+/*.navbar-brand img {
     height: unset;
+}*/
+
+@media (min-width: 992px){
+    .navbar-brand img {
+        height: 72px;
+    }
 }
 
 .nav.navbar-nav.justify-content-end {
@@ -24,11 +30,11 @@ body {
   background-color: #ffffff;
 }
 
-.navbar {
+/*.navbar {
   font-family: 'Open Sans';
   width: 100%;
   font-size: 20px;
-}
+}*/
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   width: 100%;
@@ -1201,8 +1207,9 @@ input.form-control.email-sub-input::placeholder {
 
 @media (min-width: 300px) {
   .hero-section {
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
     height: 400px;
   }
 }
@@ -1212,4 +1219,9 @@ input.form-control.email-sub-input::placeholder {
   display:block;
   margin: 0 auto;
   text-align: center;
+}
+.blue-bar{
+    background-color: #1F1441;
+    min-height: 50px;
+    width: 100%;
 }
