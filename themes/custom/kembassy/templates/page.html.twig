@@ -62,14 +62,14 @@
                 <div class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
                     {# Get menu items #}
                     {% set items = simplify_menu('main') %}
-                    
+
                     {# Iterate menu tree #}
                     <nav>
                         <ul class="nav navbar-nav justify-content-end">
                             {% for menu_item in items.menu_tree %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+                                </li>
                             {% endfor %}
                         </ul>
                     </nav>
@@ -82,15 +82,15 @@
 
 <!-- breadcrumbs -->
 {% if not is_front %}
-<div class="d-flex align-items-center breadcrumb-section">
-    <div class="container page-title">
-        <h1>{{ node.label }}</h1>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span>{{ node.label }}</span></a></li>
-        </ol>
+    <div class="d-flex align-items-center breadcrumb-section">
+        <div class="container page-title">
+            <h1>{{ node.label }}</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
+                <li class="breadcrumb-item"><a href="#"><span>{{ node.label }}</span></a></li>
+            </ol>
+        </div>
     </div>
-</div>
 {% endif %}
 
 {{ page.header }}
@@ -107,7 +107,15 @@
                         <img src="{{ logopath }}">
                     </a>
                     <a id="logo-1" class="navbar-brand" href="#"></a>
-                    <p class="social-icons"><span class="follow-txt">Follow Us</span><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-pinterest-p"></i></p><h5 class="footer-heading"><a href="#">Kingdom Heir Embassy</a></h5>
+                    <p class="social-icons">
+                        <span class="follow-txt">Follow Us</span>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </p>
+                    <h5 class="footer-heading">
+                        <a href="#">Kingdom Heir Embassy</a>
+                    </h5>
                 </div>
             </div>
         </div>
