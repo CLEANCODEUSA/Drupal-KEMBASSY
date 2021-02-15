@@ -1217,8 +1217,14 @@ input.form-control.email-sub-input::placeholder {
   margin: 0 auto;
   text-align: center;
 }
+
 .blue-bar{
     background-color: #1F1441;
     min-height: 50px;
     width: 100%;
+}
+
+.cursive-title{
+    font-size: 60px;
+    font-family: Edwardian Script ITC;
 }
