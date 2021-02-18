@@ -84,36 +84,36 @@
 
 <article{{ attributes }}>
 
-    <div{#{{ content_attributes }}#}>
+  <div{#{{ content_attributes }}#}>
 
-        {#{{ content }}#}
+    {#{{ content }}#}
 
-        <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center membership-hero-bg"
-             {% if content.field_image %}
-                 style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');background-position: top;"
-             {% endif %}>
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center membership-hero-bg"
+         {% if content.field_image %}
+           style="background-image: url('{{ file_url(content.field_image|field_target_entity.field_media_image.entity.uri.value) }}');background-position: top;"
+         {% endif %}>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 col-xl-6">
-                        <div class="membership-callout">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 col-xl-6">
+            <div class="membership-callout">
 
-                            {{ title_prefix }}
-                            {% if content.field_hero_headline|field_value %}
-                                <h1>{{ content.field_hero_headline|field_value }}</h1>
-                            {% endif %}    
-                            {{ title_suffix }}
+              {{ title_prefix }}
+              {% if content.field_hero_headline|field_value %}
+                <h1>{{ content.field_hero_headline|field_value }}</h1>
+              {% endif %}    
+              {{ title_suffix }}
 
-                            <p>{{ content.field_hero_sub_headline|field_value }}</p>
+              <p>{{ content.field_hero_sub_headline|field_value }}</p>
 
-                            <a href="{{ content.field_button_link|field_value }}">
-                                <button class="btn btn-primary" type="button"> {{ content.field_button_text|field_value }}</button>
-                            </a>
+              <a href="{{ content.field_button_link|field_value }}">
+                <button class="btn btn-primary" type="button"> {{ content.field_button_text|field_value }}</button>
+              </a>
 
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </article>
