@@ -848,6 +848,7 @@ copyright-l{
   color: #0876D5;
   background-color: white;
   border-radius: unset;
+  border: none;
 }
 
 .membership-callout p, .membership-hero-bg p {
@@ -903,11 +904,16 @@ copyright-l{
 .membership-prog .section-4 .pink-btn {
   background-color: #E41DEB;
   border-radius: unset;
+  border: none;
 }
 
 .membership-prog .section-4 .blue-btn {
   background-color: #008BFF;
   border-radius: unset;
+  border: none;
+}
+.membership-prog li, li{
+  color: #A1A0AA;
 }
 
 .membership-prog .section-4 .right-col ul li::before {
