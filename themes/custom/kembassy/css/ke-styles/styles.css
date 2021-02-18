@@ -591,6 +591,10 @@ input.form-control.email-sub-input::placeholder {
   margin-top: 30px;
 }
 
+copyright-l{
+  text-align: left;
+}
+
 .container.about-gd, .container.people-opinion {
   max-width: 100% !important;
   text-align: center;
@@ -1216,6 +1220,23 @@ input.form-control.email-sub-input::placeholder {
   }
 }
 
+@media (min-width: 300px){
+  .heir .hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+  }
+}
+
+@media (min-width: 300px){
+  .heir .hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+  }
+}
 .video {
   width: 100% !important;
   display:block;
