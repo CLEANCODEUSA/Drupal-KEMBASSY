@@ -49,48 +49,48 @@
 #}
 
 <div class="row">
-    <div class="col">
-        <nav class="navbar navbar-light navbar-expand-lg d-xl-flex align-items-xl-center">
-            <div class="container">
-                <a id="logo" class="navbar-brand" href="{{ front_page }}">
-                    <img src="{{ logopath }}"></a>
-                <a id="logo-1" class="navbar-brand" href="#"></a>
-                <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
-                    {# Get menu items #}
-                    {% set items = simplify_menu('main') %}
+  <div class="col">
+    <nav class="navbar navbar-light navbar-expand-lg d-xl-flex align-items-xl-center">
+      <div class="container">
+        <a id="logo" class="navbar-brand" href="{{ front_page }}">
+          <img src="{{ logopath }}"></a>
+        <a id="logo-1" class="navbar-brand" href="#"></a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-dark justify-content-end" id="navcol-1">
+          {# Get menu items #}
+          {% set items = simplify_menu('main') %}
 
-                    {# Iterate menu tree #}
-                    <nav>
-                        <ul class="nav navbar-nav justify-content-end">
-                            {% for menu_item in items.menu_tree %}
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </nav>
-    </div>
+          {# Iterate menu tree #}
+          <nav>
+            <ul class="nav navbar-nav justify-content-end">
+              {% for menu_item in items.menu_tree %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ menu_item.url }}">{{ menu_item.text }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </nav>
+  </div>
 </div>
 
 
 <!-- breadcrumbs -->
 {% if not is_front %}
-    <div class="d-flex align-items-center breadcrumb-section">
-        <div class="container page-title">
-            <h1>{{ node.label }}</h1>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-                <li class="breadcrumb-item"><a href="#"><span>{{ node.label }}</span></a></li>
-            </ol>
-        </div>
+  <div class="d-flex align-items-center breadcrumb-section">
+    <div class="container page-title">
+      <h1>{{ node.label }}</h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="#"><span>{{ node.label }}</span></a></li>
+      </ol>
     </div>
+  </div>
 {% endif %}
 
 {{ page.header }}
@@ -101,35 +101,36 @@
 {{ page.contact_page_webform }}#}
 
 <div class="footer-clean">
-    <footer>
-        <div class="container">
-            <div class="row d-xl-flex justify-content-xl-center">
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
-                    <a id="logo" class="navbar-brand" href="{{ front_page }}">
-                        <img src="{{ logopath }}">
-                    </a>
-                    {#<a id="logo-1" class="navbar-brand" href="#"></a>#}
-                    <div class="social-icons">
-                        <span class="follow-txt">Follow Us</span>
-                        <img src="sites/default/files/facebook.png">
-                        <img src="sites/default/files/instagram.png">
-                        <img src="sites/default/files/linkedin.png">
-                    </div>
-                    <h5 class="footer-heading">
-                        <a href="#">Kingdom Heir Embassy</a>
-                    </h5>
-                </div>
-            </div>
+  <footer>
+    <div class="container">
+      <div class="row d-xl-flex justify-content-xl-center">
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 text-center">
+          <a id="logo" class="navbar-brand" href="{{ front_page }}">
+            <img src="{{ logopath }}">
+          </a>
+          {#<a id="logo-1" class="navbar-brand" href="#"></a>#}
+          <div class="social-icons">
+            <span class="follow-txt">Follow Us</span>
+            <img src="sites/default/files/facebook.png">
+            <img src="sites/default/files/instagram.png">
+            <img src="sites/default/files/linkedin.png">
+          </div>
+          <h5 class="footer-heading">
+            <a href="#">Kingdom Heir Embassy</a>
+          </h5>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 </div>
 <div id="copyright-section">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center"><span class="col-8 sol-sm12 copyright">© All Right Reserved by www.kembassygroup.com 2021</span>
-                <span class="col-2 sol-sm12 copyright"><a href="#">Privacy Policy</a></span>
-                <span class="col-2 sol-sm12 copyright"><a href="#">Terms Of Services</a></span>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <span class="col-8 sol-sm12 copyright">© All Right Reserved by www.kembassygroup.com 2021</span>
+        <span class="col-2 sol-sm12 copyright"><a href="#">Privacy Policy</a></span>
+        <span class="col-2 sol-sm12 copyright"><a href="#">Terms Of Services</a></span>
+      </div>
     </div>
+  </div>
 </div>
