@@ -106,8 +106,15 @@
 
               <p>{{ content.field_hero_sub_headline|field_value }}</p>
 
-              <a href="{{ content.field_button_link|field_value }}">
-                <button class="btn btn-primary" type="button"> {{ content.field_button_text|field_value }}</button>
+              <a 
+                {% if content.field_button_link|field_value %}
+                  href="{{ content.field_button_link|field_value }}"
+                {% else %}
+                  href='#'
+                {% endif %}
+              >
+
+                <button id="hero-btn" class="btn btn-primary" type="button"> {{ content.field_button_text|field_value }}</button>
               </a>
 
             </div>
