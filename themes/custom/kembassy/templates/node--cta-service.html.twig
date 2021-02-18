@@ -92,109 +92,109 @@
 
 {#<article>#}
 {#<div class="services">#}
-    <div {{ attributes }}{#{{ content_attributes }}#}>
+<div {{ attributes }}{#{{ content_attributes }}#}>
 
-        {# if image alignment is left #}
-        {% if 'left' in content.field_image_alignment.0 %}
-            <div class="container section-2">
-                <div class="row">
-                    <div class="col-lg-5 col-xl-5">
-                        {{ content.field_image_media|field_value }}
-                        <div>{{ content.field_cta_image_desc|field_value }}</div>
-                    </div>
-                    <div class="col-lg-7 col-xl-7">
+  {# if image alignment is left #}
+  {% if 'left' in content.field_image_alignment.0 %}
+    <div class="container section-2">
+      <div class="row">
+        <div class="col-lg-5 col-xl-5">
+          {{ content.field_image_media|field_value }}
+          <div>{{ content.field_cta_image_desc|field_value }}</div>
+        </div>
+        <div class="col-lg-7 col-xl-7">
 
-                        {{ title_prefix }}
-                        {% if content.field_cta_headline|field_value %}
+          {{ title_prefix }}
+          {% if content.field_cta_headline|field_value %}
 
-                            {% if content.field_color_title['#items'].value == '1' %}
-                                <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
-                            {% else %}
-                                <h2>{{ content.field_cta_headline|field_value }}</h2>    
-                            {% endif %}
+            {% if content.field_color_title['#items'].value == '1' %}
+              <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
+            {% else %}
+              <h2>{{ content.field_cta_headline|field_value }}</h2>    
+            {% endif %}
 
-                        {% endif %}
-                        {{ title_suffix }}
+          {% endif %}
+          {{ title_suffix }}
 
-                        {% if content.field_cta_description_text|field_value %}
-                            <p>{{ content.field_cta_description_text|field_value }}</p>
-                        {% endif %}
+          {% if content.field_cta_description_text|field_value %}
+            <p>{{ content.field_cta_description_text|field_value }}</p>
+          {% endif %}
 
-                        {% if content.field_show_button['#items'].value == '1' %}
-                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
-                                {{ content.field_cta_link_text|field_value }}
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-
-            {# if image alignment is right #}
-        {% elseif 'right' in content.field_image_alignment.0 %}
-            <div class="container section-2" id="section-2">
-                <div class="row">
-                    <div class="col-lg-7 col-xl-7">
-
-                        {{ title_prefix }}
-                        {% if content.field_cta_headline|field_value %}
-
-                            {% if content.field_color_title['#items'].value == '1' %}
-                                <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
-                            {% else %}
-                                <h2>{{ content.field_cta_headline|field_value }}</h2>    
-                            {% endif %}
-
-                        {% endif %}
-                        {{ title_suffix }}
-
-                        {% if content.field_cta_description_text|field_value %}
-                            <p>{{ content.field_cta_description_text|field_value }}</p>
-                        {% endif %}
-
-                        {% if content.field_show_button['#items'].value == '1' %}
-                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
-                                {{ content.field_cta_link_text|field_value }}
-                            </a>
-                        {% endif %}
-                    </div>
-                    <div class="col-lg-5 col-xl-5">
-                        {{ content.field_image_media|field_value }}
-                        <div>{{ content.field_cta_image_desc|field_value }}</div>
-                    </div>
-                </div>
-            </div>
-
-            {# if image alignment isn't set #}
-        {% elseif content.field_image_alignment.0 is null %}
-            <div class="container d-xl-flex justify-content-xl-center about-gd">
-                <div class="row d-xl-flex justify-content-xl-center section-2">
-                    <div class="col about-kembassy">
-
-                        {{ title_prefix }}
-                        {% if content.field_cta_headline|field_value %}
-
-                            {% if content.field_color_title['#items'].value == '1' %}
-                                <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
-                            {% else %}
-                                <h2>{{ content.field_cta_headline|field_value }}</h2>    
-                            {% endif %}
-
-                        {% endif %}
-                        {{ title_suffix }}
-
-                        {% if content.field_cta_description_text|field_value %}
-                            <p>{{ content.field_cta_description_text|field_value }}</p>
-                        {% endif %}
-
-                        {% if content.field_show_button['#items'].value == '1' %}
-                            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
-                                {{ content.field_cta_link_text|field_value }}
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        {% endif %}
+          {% if content.field_show_button['#items'].value == '1' %}
+            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+              {{ content.field_cta_link_text|field_value }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
     </div>
+
+    {# if image alignment is right #}
+  {% elseif 'right' in content.field_image_alignment.0 %}
+    <div class="container section-2" id="section-2">
+      <div class="row">
+        <div class="col-lg-7 col-xl-7">
+
+          {{ title_prefix }}
+          {% if content.field_cta_headline|field_value %}
+
+            {% if content.field_color_title['#items'].value == '1' %}
+              <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
+            {% else %}
+              <h2>{{ content.field_cta_headline|field_value }}</h2>    
+            {% endif %}
+
+          {% endif %}
+          {{ title_suffix }}
+
+          {% if content.field_cta_description_text|field_value %}
+            <p>{{ content.field_cta_description_text|field_value }}</p>
+          {% endif %}
+
+          {% if content.field_show_button['#items'].value == '1' %}
+            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+              {{ content.field_cta_link_text|field_value }}
+            </a>
+          {% endif %}
+        </div>
+        <div class="col-lg-5 col-xl-5">
+          {{ content.field_image_media|field_value }}
+          <div>{{ content.field_cta_image_desc|field_value }}</div>
+        </div>
+      </div>
+    </div>
+
+    {# if image alignment isn't set #}
+  {% elseif content.field_image_alignment.0 is null %}
+    <div class="container d-xl-flex justify-content-xl-center about-gd">
+      <div class="row d-xl-flex justify-content-xl-center section-2">
+        <div class="col about-kembassy">
+
+          {{ title_prefix }}
+          {% if content.field_cta_headline|field_value %}
+
+            {% if content.field_color_title['#items'].value == '1' %}
+              <h2 class="color-title">{{ content.field_cta_headline|field_value }}</h2>
+            {% else %}
+              <h2>{{ content.field_cta_headline|field_value }}</h2>    
+            {% endif %}
+
+          {% endif %}
+          {{ title_suffix }}
+
+          {% if content.field_cta_description_text|field_value %}
+            <p>{{ content.field_cta_description_text|field_value }}</p>
+          {% endif %}
+
+          {% if content.field_show_button['#items'].value == '1' %}
+            <a href="{{ url('<front>') }}node/{{ content.field_content_to_link_to|field_value }}" class="btn btn-link download-free-ebook-btn" role="button">
+              {{ content.field_cta_link_text|field_value }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
 {#</div>#}
 {#</article>#}
