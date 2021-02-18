@@ -1,21 +1,21 @@
 <article{{ attributes }}>
-    <div{#{{ content_attributes }}#}>
-        <div class="container prayer-section" id="section-4">
-            <div class="row no-gutters d-xl-flex justify-content-xl-center align-items-xl-center section-4">
-                <div class="col-12 text-center">
-                    {{ title_prefix }}
-                    <h2{{ title_attributes }}>
-                        {% if node.field_cursive_title.value  %}
-{#                        {% if content.field_cursive_title|field_value %}#}
-                            <span class="cursive-title">{{ label }}</span>
-                        {% else %}
-                            {{ label }}
-                        {% endif %}
-                    </h2>
-                    {{ title_suffix }}
-                </div>
-                {{ content.field_event_list_items|field_value }}
-            </div>
+  <div{#{{ content_attributes }}#}>
+    <div class="container prayer-section" id="section-4">
+      <div class="row no-gutters d-xl-flex justify-content-xl-center align-items-xl-center section-4">
+        <div class="col-12 text-center">
+          {{ title_prefix }}
+          <h2{{ title_attributes }}>
+            {% if node.field_cursive_title.value  %}
+              {#                        {% if content.field_cursive_title|field_value %}#}
+              <span class="cursive-title">{{ label }}</span>
+            {% else %}
+              {{ label }}
+            {% endif %}
+          </h2>
+          {{ title_suffix }}
         </div>
+        {{ content.field_event_list_items|field_value }}
+      </div>
     </div>
+  </div>
 </article>
