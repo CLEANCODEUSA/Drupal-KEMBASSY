@@ -75,20 +75,20 @@
 #}
 
 <article{{ attributes }}>
-    <div{#{{ content_attributes }}#}>
-        <div class="container">
-            <div class="row">
+  <div{#{{ content_attributes }}#}>
+    <div class="container">
+      <div class="row">
 
-                {# use twig_tweak module function to print nodes #}
-                <div class="col col-sm-12 col-md-12">
-                    {{ content }}
-                </div>
-
-                <div class="col col-sm-12 col-md-12">
-                    {# webform  #}
-                    {{ drupal_entity('webform', 'free_assessment_webform') }}
-                </div>
-            </div>
+        {# use twig_tweak module function to print nodes #}
+        <div class="col col-sm-12 col-md-12">
+          {{ content }}
         </div>
+
+        <div class="col col-sm-12 col-md-12">
+          {# webform  #}
+          {{ drupal_entity('webform', 'free_assessment_webform') }}
+        </div>
+      </div>
     </div>
+  </div>
 </article>
