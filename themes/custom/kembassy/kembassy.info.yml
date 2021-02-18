@@ -12,6 +12,7 @@ stylesheets-remove:
 # Libraries.
 libraries:
   - kembassy/global-styling
+  - kembassy/global-scripts
   - kembassy/ke-styles
 
 # Regions.
