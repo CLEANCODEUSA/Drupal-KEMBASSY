@@ -732,7 +732,7 @@ copyright-l{
   background-image: url('../../assets/img/breadcrumb-sec-bg.svg');
   height: 180px;
   background-position: center;
-  background-color: blue;
+  background-repeat: repeat-x;
 }
 
 .divider-section {
@@ -1124,6 +1124,13 @@ copyright-l{
   margin-bottom: 25px;
 }
 
+.coaching .sapphire-heading .stone {
+    font-size: 20px;
+    margin-bottom: unset;
+    margin-left: 20px;
+    color: #0B176B;
+}
+
 .portrait-1 {
   width: 360px;
 }
@@ -1155,7 +1162,7 @@ copyright-l{
   color: white !important;
   padding-left: 10px;
   padding-right: 10px;
-  width: 75% !important;
+  width: 70% !important;
   margin: auto;
 }
 
