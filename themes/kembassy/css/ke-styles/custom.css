@@ -1,36 +1,49 @@
-.light-blue{
+.light-blue {
     background-color: #F4FAFF;
 }
-.white{
+
+.white {
     background-color: white;
 }
 
-.region-sidebar-first, .region-sidebar-second, .region-footer, .region-content {
+.region-sidebar-first,
+.region-sidebar-second,
+.region-footer,
+.region-content {
     padding: unset;
 }
+
 .media {
-    display: unset; 
+    display: unset;
 }
+
 .services .contact-form-submit {
     padding-top: unset;
 }
+
 .comment-image img {
     width: unset;
 }
+
 .btn-primary:hover {
     color: #fff;
     border-color: unset;
 }
+
 .container.section-2 {
     margin: 80px auto 0px auto;
 }
-#user-login-form, #user-pass{
+
+#user-login-form,
+#user-pass {
     max-width: 512px;
     margin: 80px auto;
 }
+
 #user-login-form .form-submit {
     text-transform: uppercase;
 }
+
 @media (min-width: 300px) {
     .prayer-section .contextual-region {
         max-width: 300px;
@@ -38,28 +51,38 @@
         margin: 0 auto;
     }
 }
+
 .prayer-section .contextual-region {
     max-width: 300px;
 }
+
 .contact-section-2 .form-item {
     margin-top: unset;
 }
-.contact-section-2 .form-checkboxes .form-item, .contact-section-2 legend{
+
+.contact-section-2 .form-checkboxes .form-item,
+.contact-section-2 legend {
     margin-bottom: 20px !important;
 }
+
 .webform-submission-form hr.webform-horizontal-rule {
     margin: 3.5em 0;
 }
+
 label.option {
     color: #A1A0AA;
 }
+
 div#edit-markup {
     color: #A1A0AA;
 }
+
 label {
     color: #A1A0AA;
 }
-.form-checkboxes .form-item, .form-radios .form-item{
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
