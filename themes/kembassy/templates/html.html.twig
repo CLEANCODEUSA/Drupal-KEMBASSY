@@ -26,30 +26,30 @@
  */
 #}
 <!DOCTYPE html>
-<html{{ html_attributes }}>
-  <head>
-    <head-placeholder token="{{ placeholder_token }}">
-    <title>{{ head_title|safe_join(' | ') }}</title>
-    <css-placeholder token="{{ placeholder_token }}">
-    <js-placeholder token="{{ placeholder_token }}">
-    <meta charset="utf-8">
-    {#<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">#}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  </head>
-  <body{{ attributes }}>
-    {#
-      Keyboard navigation/accessibility link to main content section in
-      page.html.twig.
-    #}
-    <a href="#main-content" class="visually-hidden focusable">
-      {{ 'Skip to main content'|t }}
-    </a>
-    {{ page_top }}
-    {{ page }}
-    {{ page_bottom }}
-    <js-bottom-placeholder token="{{ placeholder_token }}">
-  </body>
-</html>
+<html{{html_attributes}}>
+	<head>
+		<head-placeholder token="{{ placeholder_token }}">
+			<title>{{ head_title|safe_join(' | ') }}</title>
+			<css-placeholder token="{{ placeholder_token }}">
+				<js-placeholder token="{{ placeholder_token }}">
+					<meta
+					charset="utf-8">
+					{#<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">#}
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700">
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+				</head>
+				<body{{attributes}}>
+					{#
+					      Keyboard navigation/accessibility link to main content section in
+					      page.html.twig.
+					    #}
+					<a href="#main-content" class="visually-hidden focusable">
+						{{ 'Skip to main content'|t }}
+					</a>
+					{{ page_top }}
+					{{ page }}
+					{{ page_bottom }}
+					<js-bottom-placeholder token="{{ placeholder_token }}"></body>
+				</html>
