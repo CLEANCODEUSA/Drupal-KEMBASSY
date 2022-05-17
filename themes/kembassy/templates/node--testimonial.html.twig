@@ -72,27 +72,27 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes }}>
-  <div class="container d-xl-flex justify-content-xl-center about-gd">
-    <div class="row d-xl-flex section-2">
-      <div class="col about-kembassy">
-        {{ title_prefix }}
-        <h2>
-          {% if node.field_cursive_title.value  %}
-            <span class="cursive-title">{{ label }}</span>
-          {% else %}
-            {{ label }}
-          {% endif %}
-        </h2>
-        {{ title_suffix }}
-        <p>{{ content.body|field_value }}</p>
-        <span class="username">{{ content.field_user_name|field_value }}</span>
-        {% if content.field_image_media %}
-          <div class="comment-image">
-            {{ content.field_image_media|field_value }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+<div{{attributes}}>
+	<div class="container d-xl-flex justify-content-xl-center about-gd">
+		<div class="row d-xl-flex section-2">
+			<div class="col about-kembassy">
+				{{ title_prefix }}
+				<h2>
+					{% if node.field_cursive_title.value  %}
+						<span class="cursive-title">{{ label }}</span>
+					{% else %}
+						{{ label }}
+					{% endif %}
+				</h2>
+				{{ title_suffix }}
+				<p>{{ content.body|field_value }}</p>
+				<span class="username">{{ content.field_user_name|field_value }}</span>
+				{% if content.field_image_media %}
+					<div class="comment-image">
+						{{ content.field_image_media|field_value }}
+					</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
 </div>
