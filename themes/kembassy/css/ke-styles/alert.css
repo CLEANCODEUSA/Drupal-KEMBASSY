@@ -20,7 +20,8 @@
   opacity: .5;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   color: #000;
   text-decoration: none;
   opacity: .75;
@@ -37,7 +38,8 @@ button.close {
   -webkit-appearance: none;
 }
 
-.mr-1, .mx-1 {
+.mr-1,
+.mx-1 {
   margin-right: 0.3125rem !important;
 }
 
