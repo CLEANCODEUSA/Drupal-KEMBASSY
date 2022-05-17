@@ -9,7 +9,7 @@
     height: unset;
 }*/
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .navbar-brand img {
     height: 72px;
   }
@@ -36,7 +36,11 @@ body {
   font-size: 20px;
 }*/
 
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
   width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -130,10 +134,11 @@ body {
   }
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
-  height: auto!important;
+  height: auto !important;
 }
 
 * {
@@ -148,6 +153,7 @@ html, body {
 a.nav-link {
   font-size: 18px;
 }
+
 .navbar-nav .nav-link {
   margin: 0px 0px 0px 30px;
 }
@@ -207,18 +213,15 @@ a.nav-link {
 }
 
 @media (min-width: 1200px) {
-  .hero-callout img {
-  }
+  .hero-callout img {}
 }
 
 @media (min-width: 992px) {
-  .hero-callout img {
-  }
+  .hero-callout img {}
 }
 
 @media (min-width: 768px) {
-  .hero-callout img {
-  }
+  .hero-callout img {}
 }
 
 .section-1 h2 {
@@ -270,14 +273,21 @@ a.nav-link {
   color: white;
 }
 
-.section-2 h2, .section-3 h2, .section-4 h2, .section-5 h2 {
+.section-2 h2,
+.section-3 h2,
+.section-4 h2,
+.section-5 h2 {
   color: #23233F;
   font-family: 'Open Sans';
   font-size: 30px;
 }
 
 @media (min-width: 300px) {
-  .section-2 h2, .section-3 h2, .section-4 h2, .section-5 h2 {
+
+  .section-2 h2,
+  .section-3 h2,
+  .section-4 h2,
+  .section-5 h2 {
     margin-top: 20px;
     font-family: 'Open Sans';
   }
@@ -287,7 +297,9 @@ a.nav-link {
   margin-top: unset;
 }
 
-.section-1 p, .section-2 p, .section-3 p {
+.section-1 p,
+.section-2 p,
+.section-3 p {
   font-family: 'Poppins';
   font-size: 14px;
   color: #A1A0AA;
@@ -295,7 +307,8 @@ a.nav-link {
   margin-top: 32px;
 }
 
-.coaching .section-3 p, .coaching .section-5 p {
+.coaching .section-3 p,
+.coaching .section-5 p {
   font-size: 16px;
   color: #A1A0AA;
   line-height: 32px;
@@ -309,7 +322,8 @@ a.nav-link {
   margin-top: 32px;
 }
 
-.section-4 h2, .section-5 h2 {
+.section-4 h2,
+.section-5 h2 {
   margin-bottom: 60px;
   margin-top: 32px;
 }
@@ -520,7 +534,7 @@ input.form-control.email-sub-input::placeholder {
   }
 }
 
-.footer-clean .item.social > a {
+.footer-clean .item.social>a {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -535,18 +549,18 @@ input.form-control.email-sub-input::placeholder {
   opacity: 0.75;
 }
 
-.footer-clean .item.social > a:hover {
+.footer-clean .item.social>a:hover {
   opacity: 0.9;
 }
 
 @media (max-width:991px) {
-  .footer-clean .item.social > a {
+  .footer-clean .item.social>a {
     margin-top: 40px;
   }
 }
 
 @media (max-width:767px) {
-  .footer-clean .item.social > a {
+  .footer-clean .item.social>a {
     margin-top: 10px;
   }
 }
@@ -591,11 +605,12 @@ input.form-control.email-sub-input::placeholder {
   margin-top: 30px;
 }
 
-copyright-l{
+copyright-l {
   text-align: left;
 }
 
-.container.about-gd, .container.people-opinion {
+.container.about-gd,
+.container.people-opinion {
   max-width: 100% !important;
   text-align: center;
   font-family: 'Poppins';
@@ -651,6 +666,7 @@ copyright-l{
 .footer-clean .social-icons {
   margin: 20px auto;
 }
+
 .social-icons img {
   margin: auto 5px;
 }
@@ -834,24 +850,28 @@ copyright-l{
   line-height: 32px;
 }
 
-.membership-prog .membership-callout h1, .membership-hero-bg .membership-callout h1 {
+.membership-prog .membership-callout h1,
+.membership-hero-bg .membership-callout h1 {
   font-size: 36px;
 }
 
-.membership-prog .membership-callout, .membership-hero-bg .membership-callout {
+.membership-prog .membership-callout,
+.membership-hero-bg .membership-callout {
   background-color: #008BFF;
   color: white;
   padding: 40px 40px;
 }
 
-.membership-callout .btn, .membership-hero-bg .btn {
+.membership-callout .btn,
+.membership-hero-bg .btn {
   color: #0876D5;
   background-color: white;
   border-radius: unset;
   border: none;
 }
 
-.membership-callout p, .membership-hero-bg p {
+.membership-callout p,
+.membership-hero-bg p {
   margin: 20px auto;
 }
 
@@ -912,7 +932,9 @@ copyright-l{
   border-radius: unset;
   border: none;
 }
-.membership-prog li, li{
+
+.membership-prog li,
+li {
   color: #A1A0AA;
 }
 
@@ -959,7 +981,8 @@ copyright-l{
   margin-left: 20px;
 }
 
-.coaching .section-3 .stone, .coaching .section-5 .stone {
+.coaching .section-3 .stone,
+.coaching .section-5 .stone {
   font-size: 20px;
   margin-bottom: unset;
   margin-left: 20px;
@@ -983,7 +1006,8 @@ copyright-l{
   background-color: #E41DEB;
 }
 
-.membership-prog .right-col-inner, .membership-prog .left-col-inner {
+.membership-prog .right-col-inner,
+.membership-prog .left-col-inner {
   border: 1px solid #D8D8D8;
   border-top: unset;
   padding: 0 20px 20px 20px;
@@ -1071,17 +1095,20 @@ copyright-l{
   color: #008BFF;
 }
 
-.page-body ul, .coaching ul {
+.page-body ul,
+.coaching ul {
   list-style: none;
   margin-left: 20px;
 }
 
-.page-body ul li, .coaching ul li {
+.page-body ul li,
+.coaching ul li {
   margin-top: 20px;
   color: #A1A0AA;
 }
 
-.page-body ul li::before, .coaching ul li::before {
+.page-body ul li::before,
+.coaching ul li::before {
   content: "\2022";
   color: #008BFF;
   font-weight: bold;
@@ -1090,16 +1117,19 @@ copyright-l{
   margin-left: -1em;
 }
 
-.coaching .section-1, .coaching .section-2 {
+.coaching .section-1,
+.coaching .section-2 {
   margin: 80px auto;
 }
 
-.coaching .section-4 p, .coaching .section-6 p {
+.coaching .section-4 p,
+.coaching .section-6 p {
   width: 100%;
   line-height: 32px;
 }
 
-.coaching .section-3 .image, .coaching .section-5 .image {
+.coaching .section-3 .image,
+.coaching .section-5 .image {
   width: 80%;
 }
 
@@ -1117,8 +1147,7 @@ copyright-l{
   margin-bottom: 20px;
 }
 
-.coaching {
-}
+.coaching {}
 
 .coaching .sapphire-heading {
   margin-bottom: 25px;
@@ -1233,7 +1262,7 @@ copyright-l{
   }
 }
 
-@media (min-width: 300px){
+@media (min-width: 300px) {
   .heir .hero-section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1242,7 +1271,7 @@ copyright-l{
   }
 }
 
-@media (min-width: 300px){
+@media (min-width: 300px) {
   .heir .hero-section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1250,20 +1279,21 @@ copyright-l{
     height: 400px;
   }
 }
+
 .video {
   width: 100% !important;
-  display:block;
+  display: block;
   margin: 0 auto;
   text-align: center;
 }
 
-.blue-bar{
+.blue-bar {
   background-color: #1F1441;
   min-height: 50px;
   width: 100%;
 }
 
-.cursive-title{
+.cursive-title {
   font-size: 60px;
   font-family: Edwardian Script ITC;
 }
