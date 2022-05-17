@@ -74,36 +74,34 @@
  */
 #}
 {#node.html.twig#}
-<article{{ attributes }}>
+	<article{{attributes}}>
 
-  <div{#{{ content_attributes }}#}>
+		<div {#{{ content_attributes }}#}> <div class="coaching">
 
-    <div class="coaching">
+			{{ content.field_hero }}
 
-      {{ content.field_hero }}
+			<div class="container section-1">
+				<div class="row">
+					<div class="col-12">
+						{% if content.body|field_value %}
+							{{ content.body|field_value }}
+						{% endif %}
+					</div>
+				</div>
+			</div>
 
-      <div class="container section-1">
-        <div class="row">
-          <div class="col-12">
-            {% if content.body|field_value %}
-              {{ content.body|field_value }}
-            {% endif %}
-          </div>
-        </div>
-      </div>
+			{{ content.field_optional_components_entity }}
 
-      {{ content.field_optional_components_entity }}
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						{% if content.field_webform %}
+							{{ content.field_webform }}
+						{% endif %}
+					</div>
+				</div>
+			</div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            {% if content.field_webform %}
-              {{ content.field_webform }}
-            {% endif %}
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+		</div>
+	</div>
 </article>
